@@ -5,21 +5,40 @@
 using namespace std;
 
 
-Episodio::Episodio() {}
+Episodio::Episodio() {
+
+    idEpisodio = "000";
+    Nombreepisodio = "S/t";
+    numEpisodio = 0;
+    temporada = 0;
+    fechaestreno = "00/00/00";
+    calificacionEp = 0;
+
+}
+
+
     
-Episodio::Episodio(
-    string idEpisodio, string Nombre_episodio, int numEpisodio, int temporada, 
-    string fecha_estreno, int calificacionEp) {}
+Episodio::Episodio(string id_Episodio, string Nombre_episodio, int num_Episodio, int temporada_new, 
+    string fecha_estreno, int calificacion_Ep) {
+
+    idEpisodio = id_Episodio;
+    Nombreepisodio = Nombre_episodio;
+    numEpisodio = num_Episodio;
+    temporada = temporada_new;
+    fechaestreno = fecha_estreno;
+    calificacionEp = calificacion_Ep;
+
+}
 
 string Episodio::getIdEpisodio() {return idEpisodio;}
 
-string Episodio::getNombre_episodio() {return Nombre_episodio;}
+string Episodio::getNombre_episodio() {return Nombreepisodio;}
 
 int Episodio::getNumEpisodio() {return numEpisodio;}
 
 int Episodio::getTemporada() {return temporada;}
 
-string Episodio::getFecha_estreno() {return fecha_estreno;}
+string Episodio::getFecha_estreno() {return fechaestreno;}
 
 int Episodio::getCalificacionEp() {return calificacionEp;}
 

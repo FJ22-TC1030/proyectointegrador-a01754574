@@ -2,8 +2,8 @@
 #define CATALOGO_H
 
 #pragma once
-#include <pelicula.h>
-#include <serie.h>
+#include "pelicula.h"
+#include "serie.h"
 #include <iostream>
 #include <vector>
 
@@ -17,6 +17,7 @@ class Catalogo {
     
     public:
         Catalogo();
+        Catalogo(vector<Pelicula> pels, vector<Serie> sre);
 
         void cargarArchivo();
         void mostrarCatalogo();

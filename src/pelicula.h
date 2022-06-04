@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Pelicula {
+class Pelicula: public Video {
 
     private:
         string idPelicula;
@@ -21,8 +21,8 @@ class Pelicula {
     
     public:
         Pelicula();
-        Pelicula(string idPelicula, string NombrePelicula, string generoPelicula, int duracionPelicula,
-        float calificacion, string FechaEstreno);
+        Pelicula(string id_Pelicula, string Nombre_Pelicula, vector<string> genero_Pelicula, int duracion_Pelicula,
+        float calificacion_new, string Fecha_Estreno);
         
         string getIDPelicula();
         string getNombrePelicula();

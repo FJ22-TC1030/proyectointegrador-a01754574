@@ -12,7 +12,7 @@ using namespace std;
 class Serie {
 
     private:
-        vector<Episodio> episodio;
+        vector<Episodio> episodios;
         string idSerie;
         string nombreSerie;
         vector<string> generoSerie;
@@ -21,12 +21,14 @@ class Serie {
     
     public:
         Serie();
-        Serie(Episodio episodio, string idSerie, string nombreSerie, string generoSerie, int duracionSerie, int calificacionSer);
+        Serie(vector<Episodio> episodio_new, string id_Serie, string nombre_Serie, vector<string>genero_Serie, 
+        int duracion_Serie, int calificacion_Ser);
         vector<Episodio> getEpisodio();
         string getIdSerie();
         string getNombreSerie();
         vector<string> getGeneroSerie();
         int getDuracionSerie();
+        void imprimir();
 
         void setCalifSerie(float newCalifSerie);
 };

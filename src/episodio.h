@@ -8,21 +8,20 @@
 
 using namespace std;
 
-class Episodio {
+class Episodio: public Video {
 
     private:
         string idEpisodio;
-        string Nombre_episodio;
+        string Nombreepisodio;
         int numEpisodio;
         int temporada;
-        string fecha_estreno;
+        string fechaestreno;
         int calificacionEp;
         
-    
     public:
         Episodio();
-        Episodio(string idEpisodio, string Nombre_episodio, int numEpisodio, int temporada, 
-        string fecha_estreno, int calificacionEp);
+        Episodio(string id_Episodio, string Nombre_episodio, int num_Episodio, int temporada_new, 
+        string fecha_estreno, int calificacion_Ep);
 
         string getIdEpisodio();
         string getNombre_episodio();
