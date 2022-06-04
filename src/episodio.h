@@ -12,16 +12,24 @@ class Episodio {
 
     private:
         string idEpisodio;
+        string Nombre_episodio;
         int numEpisodio;
         int temporada;
-        string Nombre_episodio;
+        string fecha_estreno;
+        int calificacionEp;
+        
     
     public:
         Episodio();
-        Episodio(string NewIdEp, int NewNumEp, int newTemEp, string newNomEp);
+        Episodio(string idEpisodio, string Nombre_episodio, int numEpisodio, int temporada, 
+        string fecha_estreno, int calificacionEp);
 
-        string getIDEpisodio();
-        int getNumeroEpisodio();
+        string getIdEpisodio();
+        string getNombre_episodio();
+        int getNumEpisodio();
+        int getTemporada();
+        string getFecha_estreno();
+        int getCalificacionEp();
 
         void setCalifEpisodio(float newCalifEp);
 };

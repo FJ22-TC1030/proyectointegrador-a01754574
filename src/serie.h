@@ -1,3 +1,6 @@
+#ifndef SERIE_H
+#define SERIE_H
+
 #pragma once
 #include "episodio.h"
 #include <iostream>
@@ -14,15 +17,18 @@ class Serie {
         string nombreSerie;
         vector<string> generoSerie;
         int duracionSerie;
+        int calificacionSer;
     
     public:
         Serie();
-
+        Serie(Episodio episodio, string idSerie, string nombreSerie, string generoSerie, int duracionSerie, int calificacionSer);
         vector<Episodio> getEpisodio();
-        string getIDSerie();
+        string getIdSerie();
         string getNombreSerie();
         vector<string> getGeneroSerie();
         int getDuracionSerie();
 
         void setCalifSerie(float newCalifSerie);
 };
+
+#endif

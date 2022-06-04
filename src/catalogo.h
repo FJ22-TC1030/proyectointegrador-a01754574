@@ -1,3 +1,6 @@
+#ifndef CATALOGO_H
+#define CATALOGO_H
+
 #pragma once
 #include <pelicula.h>
 #include <serie.h>
@@ -14,8 +17,11 @@ class Catalogo {
     
     public:
         Catalogo();
-        
+
+        void cargarArchivo();
         void mostrarCatalogo();
         void mostrarPeliculas();
         void mostrarSeries();
 };
+
+#endif

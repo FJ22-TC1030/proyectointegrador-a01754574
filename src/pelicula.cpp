@@ -3,10 +3,14 @@
 #include <string>
 #include <vector> 
 
+using namespace std;
+
 Pelicula::Pelicula() {}
 
-Pelicula::Pelicula(string idPelicula, string NombrePelicula, string generoPelicula, int duracionPelicula,
-          float calificacion, string FechaEstreno) {}
+Pelicula::Pelicula(
+    string idPelicula, string NombrePelicula, string generoPelicula, int duracionPelicula,
+    float calificacion, string FechaEstreno
+) {}
         
 string Pelicula::getIDPelicula() {return idPelicula;}
 
