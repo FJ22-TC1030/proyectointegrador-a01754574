@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Jun 03 16:43:10 2022
+# Make data base, printed on Sat Jun 04 08:03:01 2022
 
 # Variables
 
@@ -67,7 +67,7 @@ DEL = del
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-b09db7ea-96f1-4011-8326-1015f9065542-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a4f5839e-2194-45fc-8c54-bd85fa0d3002-sock
 # environment
 VSCODE_CWD = C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -101,7 +101,7 @@ SRCDIR = ./
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10916_SJLUTESWRARPUGFB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12284_LZBHHJUSIITSQJCF
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -230,7 +230,7 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 10916
+VSCODE_PID = 12284
 # environment
 USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # variable set hash-table stats:
@@ -245,8 +245,8 @@ USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # : could not be stat'd.
 # C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/celfe/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652993706): 4 files, no impossibilities.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1639715969): 39 files, no impossibilities.
-# . (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574, mtime 1654274905): 14 files, no impossibilities.
-# ./ (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/, mtime 1654274905): 14 files, no impossibilities.
+# . (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574, mtime 1654310187): 11 files, no impossibilities.
+# ./ (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/, mtime 1654310187): 11 files, no impossibilities.
 # C:\Users\celfe\.cargo\bin (key C:/Users/celfe/.cargo/bin, mtime 1645560141): 14 files, no impossibilities.
 # C:\MinGW\bin\ (key C:/MinGW/bin/, mtime 1652763006):  
 128 files, no impossibilities.
@@ -259,17 +259,17 @@ USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # C:\Program Files\MATLAB\R2021b\bin (key C:/Program Files/MATLAB/R2021b/bin, mtime 1639797393): 16 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1652254432): 163 files, no impossibilities.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1654002882): 2900 files, no impossibilities.
-# C:\Program Files\JetBrains\CLion 2021.3\bin (key C:/Program Files/JetBrains 
-/CLion 2021.3/bin, mtime 1639951671): 37 files, no impossibilities.
+# C:\Program Files\JetBrains\CLion 2021.3\bin (key C:/Program Files/JetBrains/CLion 2021.3/bin, mtime 1639951671): 37 files, no impossibilities.
 # C:\Users\celfe\AppData\Local\Microsoft\WindowsApps (key C:/Users/celfe/AppData/Local/Microsoft/WindowsApps, mtime 1654266233): 41 files, no impossibilities.
 # C:\Program Files (x86)\VMware\VMware Workstation\bin\ (key C:/Program Files (x86)/VMware/VMware Workstation/bin/, mtime 1639718915): 4 files, no impossibilities.
 
-# 3686 files, no impossibilities in 19 directories.
+# 3680 files, no impossibilities in 19 directories.
 
 # Implicit Rules
 
 %.d: %.cpp
-#  recipe to execute (from 'Makefile', line 40):
+#  recipe to execute (from 'Makefile', 
+ line 40):
 	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
 %.o: %.cpp
@@ -338,8 +338,7 @@ cleanw:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been upda 
-ted.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 64):
 	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
 
@@ -379,16 +378,17 @@ clean:
 
 # No 'vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# No ge 
+neral ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3481 / storage = 51895 B / avg = 14 B
-# current buf: size = 8174 B / used = 2909 B / count = 184 / avg = 15 B
-# other used: total = 43721 B / count = 3297 / avg = 13 B
-# other free: total = 58 B / max = 13 B / min = 6 B / avg = 9 B
+# strcache buffers: 7 (4) / strings = 3478 / storage = 51841 B / avg = 14 B
+# current buf: size = 8174 B / used = 2858 B / count = 181 / avg = 15 B
+# other used: total = 43667 B / count = 3297 / avg = 13 B
+# other free: total = 61 B / max = 19 B / min = 2 B / avg = 10 B
 
-# strcache performance: lookups = 3741 / hit rate = 6%
+# strcache performance: lookups = 3735 / hit rate = 6%
 # hash-table stats:
-# Load=3481/8192=42%, Rehash=0, Collisions=1255/3741=34%
-# Finished Make data base on Fri Jun 03 16:43:10 2022
+# Load=3478/8192=42%, Rehash=0, Collisions=1254/3735=34%
+# Finished Make data base on Sat Jun 04 08:03:01 2022
 
  
