@@ -9,8 +9,6 @@ using namespace std;
 
 Serie::Serie() {
 
-    
-
     idSerie = "000";
     nombreSerie = "S/T";
     generoSerie = "S/G";
