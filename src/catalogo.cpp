@@ -64,6 +64,7 @@ void Catalogo::agregarPeliculas(Pelicula Pelicula1) {
 
 void Catalogo::agregarSeries(Serie Serie1) {
 
+    
     serie.push_back(Serie1);
 
 }

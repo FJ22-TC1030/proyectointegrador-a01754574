@@ -29,6 +29,5 @@ int main() {
     cout << "\n***SERIES***" << endl;
     Catalogo.mostrarSeries();
 
-    
     return 0;
 }

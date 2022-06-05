@@ -26,5 +26,6 @@ string Video::getNombreVideo() {return NombreVideo;}
 string Video::getIDVideo() {return IDvideo;}
 string Video::getFechaEstreno() {return fechaEstreno;}
 float Video::getCalifVideo() {return califVideo;}
+
 void Video::setCalifVideo(float NewCalif) {califVideo = NewCalif;}
         

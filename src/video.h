@@ -29,7 +29,6 @@ class Video {
         string getFechaEstreno();
         float getCalifVideo();
         void setCalifVideo(float NewCalif);
-
 };
 
 

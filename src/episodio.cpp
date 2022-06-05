@@ -16,7 +16,6 @@ Episodio::Episodio() {
     temporada = 0;
     fechaestreno = "00/00/00";
     calificacionEp = 0;
-
 }
 
 
