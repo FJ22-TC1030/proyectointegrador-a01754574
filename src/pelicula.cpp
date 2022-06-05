@@ -1,3 +1,6 @@
+// Luis Fernando De León Silva A01754574 
+// Oswaldo Daniel Hernandez De Luna A01753911
+
 #include "pelicula.h"
 #include <iostream>
 #include <string>
@@ -11,9 +14,7 @@ Pelicula::Pelicula() {
 
     NombrePelicula = "S/T";
 
-    vector<string>gen;
-
-    generoPelicula = gen;
+    generoPelicula = "S/G";
 
     duracionPelicula = 0;
 
@@ -24,14 +25,12 @@ Pelicula::Pelicula() {
 
 }
 
-Pelicula::Pelicula(string id_Pelicula, string Nombre_Pelicula, vector<string> genero_Pelicula, int duracion_Pelicula,
+Pelicula::Pelicula(string id_Pelicula, string Nombre_Pelicula, string genero_Pelicula, int duracion_Pelicula,
     float calificacion_new, string Fecha_Estreno) {
 
     idPelicula = id_Pelicula; 
 
     NombrePelicula = Nombre_Pelicula;
-
-    vector<string>gen;
 
     generoPelicula = genero_Pelicula;
 
@@ -47,7 +46,7 @@ string Pelicula::getIDPelicula() {return idPelicula;}
 
 string Pelicula::getNombrePelicula() {return NombrePelicula;}
 
-vector<string> Pelicula::getGeneroPelicula() {return generoPelicula;}
+string Pelicula::getGeneroPelicula() {return generoPelicula;}
 
 int Pelicula::getDuracionPelicula() {return duracionPelicula;}
 

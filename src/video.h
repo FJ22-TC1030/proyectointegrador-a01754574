@@ -1,3 +1,6 @@
+// Luis Fernando De León Silva A01754574 
+// Oswaldo Daniel Hernandez De Luna A01753911
+
 #ifndef VIDEO_H
 #define VIDEO_H
 

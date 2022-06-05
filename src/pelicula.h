@@ -1,3 +1,6 @@
+// Luis Fernando De León Silva A01754574 
+// Oswaldo Daniel Hernandez De Luna A01753911
+
 #ifndef PELICULA_H
 #define PELICULA_H
 
@@ -14,19 +17,19 @@ class Pelicula: public Video {
     private:
         string idPelicula;
         string NombrePelicula;
-        vector<string> generoPelicula;
+        string generoPelicula;
         int duracionPelicula;
         float calificacion;
         string FechaEstreno;
     
     public:
         Pelicula();
-        Pelicula(string id_Pelicula, string Nombre_Pelicula, vector<string> genero_Pelicula, int duracion_Pelicula,
+        Pelicula(string id_Pelicula, string Nombre_Pelicula, string genero_Pelicula, int duracion_Pelicula,
         float calificacion_new, string Fecha_Estreno);
         
         string getIDPelicula();
         string getNombrePelicula();
-        vector<string> getGeneroPelicula();
+        string getGeneroPelicula();
         int getDuracionPelicula();
         float getCalificacion();
         string getFechaEstreno();

@@ -1,3 +1,6 @@
+// Luis Fernando De León Silva A01754574 
+// Oswaldo Daniel Hernandez De Luna A01753911
+
 #include "catalogo.h"
 #include <iostream>
 #include <string>
@@ -27,7 +30,7 @@ void Catalogo::cargarArchivo(){
 
 void Catalogo::mostrarCatalogo() {
 
-    // ESTE METODO AUN NO SE USA
+    
 }
 
 void Catalogo::mostrarPeliculas() {
@@ -36,24 +39,31 @@ void Catalogo::mostrarPeliculas() {
         cout << "Nombre pelicula: " << pelicula[i].getNombrePelicula() << endl; 
         cout << "Duracion: " << pelicula[i].getDuracionPelicula() << endl;
         cout << "Id pelicula: " << pelicula[i].getIDPelicula() << endl;
-        
-        vector <string> Gen;
-        
-        Gen = pelicula[i].getGeneroPelicula();
-        
-        for (int j = 0; j < Gen.size();j++) {
-            cout << "Genero: " << Gen[j] << endl;
-        }
-        
-    }
-}   
+        cout << "Genero: " << pelicula[i].getGeneroPelicula() << endl;
+        cout << "Fecha Estreno: " << pelicula[i].getFechaEstreno() << endl;
 
+    }
+}
 
 void Catalogo::mostrarSeries() { 
     for (int i = 0; i < serie.size(); i++) {
         cout << "Nombre serie: " << serie[i].getNombreSerie() << endl;
-        cout << "Lista episodios: " << endl;
-
+        cout << "Id serie: " << serie[i].getIdSerie() << endl;
+        cout << "Genero: "  << serie[i].getGeneroSerie() << endl;
+        cout << "Duracion: " << serie[i].getDuracionSerie() << endl;
+        cout << "Calificacion: " << serie[i].getCalificacionSer() << endl;
         serie[i].imprimir();
     }
+}
+
+void Catalogo::agregarPeliculas(Pelicula Pelicula1) {
+
+    pelicula.push_back(Pelicula1);
+
+}
+
+void Catalogo::agregarSeries(Serie Serie1) {
+
+    serie.push_back(Serie1);
+
 }
