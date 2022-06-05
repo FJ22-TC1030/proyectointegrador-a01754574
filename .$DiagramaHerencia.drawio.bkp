@@ -1,0 +1,136 @@
+<mxfile host="65bd71144e">
+    <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+        <mxGraphModel dx="650" dy="292" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-46" value="Streaming" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="310" width="250" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-47" value="- catalogo: Catalogo&#10;- nombreVideo: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-46" vertex="1">
+                    <mxGeometry y="26" width="250" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-46" vertex="1">
+                    <mxGeometry y="70" width="250" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-49" value="+ Streaming()&#10;+ getCatalogo(): string&#10;+ setCatalogo(newNomVid: String): void&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-46" vertex="1">
+                    <mxGeometry y="78" width="250" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-50" value="Pelicula" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry y="120" width="290" height="368" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-51" value="- idPelicula: string&#10;-NombrePelicula : string&#10;- generoPelicula: string&#10;- duracionPelicula: int&#10;- calificacion: float&#10;- FechaEstreno: string&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-50" vertex="1">
+                    <mxGeometry y="26" width="290" height="124" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-50" vertex="1">
+                    <mxGeometry y="150" width="290" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-53" value="+ Pelicula()&#10;+ Pelicula(string id_Pelicula, string Nombre_Pelicula,&#10;string genero_Pelicula, int duracion_Pelicula, float&#10;calificacion_new, string Fecha_Genero)&#10;&#10;+ getIDPelicula(): string&#10;+ getNombrePelicula(): string&#10;+ getGeneroPelicula(): string&#10;+ getDuracionPelicula(): int&#10;+ getCalificacion(): float&#10;+ getFechaGenero(): string&#10;&#10;&#10;+ setCalifPelicula(newCalif: float): void&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-50" vertex="1">
+                    <mxGeometry y="158" width="290" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-54" value="Catalogo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="500" y="170" width="320" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-55" value="- pelicula: &lt;vector&gt;Pelicula&#10;- serie: &lt;vector&gt;Serie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-54" vertex="1">
+                    <mxGeometry y="26" width="320" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-56" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-54" vertex="1">
+                    <mxGeometry y="60" width="320" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-57" value="+ Catalogo()&#10;+ Catalogo(pels&lt;vector&gt;Pelicula, sre&lt;vector&gt;Serie)&#10;+ cargarArchivo(): void&#10;+ mostrarCatalogo(): void&#10;+ mostrarPeliculas(): void&#10;+ mostrarSeries(): void&#10;+ agregarseries(): void&#10;+ agregarPeliculas(pelicula1: Pelicula): void&#10;+ agregarSeries(Serie1: Serie) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-54" vertex="1">
+                    <mxGeometry y="68" width="320" height="152" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-58" value="Episodio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="320" y="430" width="250" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-59" value="- idEpisodio: string&#10;- Nombreepisodio: string&#10;- numEpisodio: int&#10;- temporada: int&#10;- fechaestreno: string&#10;- calificacionEp: int&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-58" vertex="1">
+                    <mxGeometry y="26" width="250" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-60" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-58" vertex="1">
+                    <mxGeometry y="130" width="250" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-61" value="+ Episodio()&#10;+ Episodio(string id_Episodio, &#10;    string Nombre_episodio,&#10;    int num_Episodio, int temporada_new, &#10;    string fecha_estreno, int calificacion_Ep)&#10;&#10;+ getIdEpisodio(): string&#10;+ getNombre_episodio(): string&#10;+ getNumEpisodio(): int&#10;+ getTemporada(): int&#10;+ getFecha_estreno(): string&#10;+ getCalificacionEp(): int&#10;&#10;+ setCalifEpisodio(newCalifEp: float): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-58" vertex="1">
+                    <mxGeometry y="138" width="250" height="232" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-62" value="Serie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="580" y="460" width="240" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-63" value="- episodio: vector&lt;Episodio&gt;&#10;- idSerie: string&#10;- nombreSerie: string&#10;- generoSerie: string&#10;- duracionSerie: float&#10;- calificacionSer: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-62" vertex="1">
+                    <mxGeometry y="26" width="240" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-64" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-62" vertex="1">
+                    <mxGeometry y="120" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-65" value="+ Serie()&#10;+ Serie(string id_serie,string nombre_Serie,&#10; string genero_serie, int duracion_Serie, &#10; int calificacion_Ser&#10;&#10;+ getEpisodio(): vector&lt;Episodio&gt;&#10;+ getIdSerie(): string&#10;+ getNombreSerie(): string&#10;+ getGeneroSerie(): string&#10;+ getDuracionSerie(): int&#10;+ getCalificacionSer(): int&#10;+ imprimir(): void&#10;+ agregarEpisodio(episodio1:Episodio): void&#10;&#10;+ setCalifSerie(newCalifSerie:  float): void&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-62" vertex="1">
+                    <mxGeometry y="128" width="240" height="242" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-69" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+                    <mxGeometry x="-0.8862" y="-8" relative="1" as="geometry">
+                        <mxPoint x="420" y="160" as="sourcePoint"/>
+                        <mxPoint x="490" y="260" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="420" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-70" value="Video" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="20" y="570" width="280" height="226" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-71" value="- nombreVideo: string&#10;- IDVideo: string&#10;- califVideo: float&#10;- fechaEstreno: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-70" vertex="1">
+                    <mxGeometry y="26" width="280" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-72" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-70" vertex="1">
+                    <mxGeometry y="96" width="280" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uZR9ke0IT6AlAk9HZ8r9-73" value="+ Video()&#10;+ Video(string nombre_Video, string&#10;ID_Video, string Fecha_Estreno, float calif_Video &#10;+ getNombreVideo(): String&#10;+ getIDVideo(): string&#10;+ getCalifVideo(): float&#10;+ getFechaEstreno(): string&#10;+ void setCalifVideo(float NewCalif)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uZR9ke0IT6AlAk9HZ8r9-70" vertex="1">
+                    <mxGeometry y="104" width="280" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="1MSRajrUeA0lo2mMufBG-0" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="uZR9ke0IT6AlAk9HZ8r9-57" edge="1">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="300" y="302" as="sourcePoint"/>
+                        <mxPoint x="260" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1MSRajrUeA0lo2mMufBG-1" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="uZR9ke0IT6AlAk9HZ8r9-61" edge="1">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="660" y="830" as="sourcePoint"/>
+                        <mxPoint x="600" y="740" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="660" y="890"/>
+                            <mxPoint x="520" y="890"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1MSRajrUeA0lo2mMufBG-2" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.458;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="uZR9ke0IT6AlAk9HZ8r9-62" edge="1">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="692" y="390.00000000000006" as="sourcePoint"/>
+                        <mxPoint x="690" y="440" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="692" y="430"/>
+                            <mxPoint x="690" y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1MSRajrUeA0lo2mMufBG-5" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.171;exitY=1.022;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="uZR9ke0IT6AlAk9HZ8r9-61" edge="1">
+                    <mxGeometry x="0.9108" y="-40" width="160" relative="1" as="geometry">
+                        <mxPoint x="360" y="820" as="sourcePoint"/>
+                        <mxPoint x="280" y="800" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="360" y="860"/>
+                            <mxPoint x="280" y="860"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1MSRajrUeA0lo2mMufBG-6" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+                    <mxGeometry x="0.6399" y="28" width="160" relative="1" as="geometry">
+                        <mxPoint x="110" y="490" as="sourcePoint"/>
+                        <mxPoint x="110" y="560" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
