@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sat Jun 04 08:03:01 2022
+# Make data base, printed on Thu Jun 09 10:42:04 2022
 
 # Variables
 
@@ -17,10 +17,6 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 ?F = $(notdir $?)
 # default
 .SHELLFLAGS := -c
-# makefile (from 'Makefile', line 18)
-OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
-# makefile (from 'Makefile', line 17)
-SRC = $(wildcard $(SRCDIR)/*$(EXT))
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -28,8 +24,7 @@ VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
-@D = $(patsubst %/,%,$(pat 
-subst %\,%,$(dir $@)))
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
 HOMEDRIVE = C:
 # automatic
@@ -40,8 +35,6 @@ HOMEDRIVE = C:
 CURDIR := c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574
 # default
 SHELL := sh.exe
-# makefile (from 'Makefile', line 21)
-RM = rm
 # environment
 CLION = C:\Program Files\JetBrains\CLion 2021.3\bin;
 # environment
@@ -52,22 +45,18 @@ VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{},"_languagePackSupport
 ONEDRIVE = C:\Users\celfe\OneDrive
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile
+MAKEFILE_LIST := 
 # environment
 TMP = C:\Users\celfe\AppData\Local\Temp
-# makefile (from 'Makefile', line 7)
-CXXFLAGS = -g -std=c++11 
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 PROGRAMW6432 = C:\Program Files
-# makefile (from 'Makefile', line 24)
-DEL = del
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a4f5839e-2194-45fc-8c54-bd85fa0d3002-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-232715a9-753e-42ec-9746-3f802d83e1a0-sock
 # environment
 VSCODE_CWD = C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -76,8 +65,6 @@ PATH = C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
 ZES_ENABLE_SYSMAN = 1
-# makefile (from 'Makefile', line 19)
-DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # environment
 PROCESSOR_ARCHITECTURE = x86
 # environment
@@ -92,16 +79,12 @@ VSCODE_LOG_STACK = false
 NUMBER_OF_PROCESSORS = 4
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# makefile (from 'Makefile', line 8)
-LDFLAGS = 
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
-# makefile (from 'Makefile', line 13)
-SRCDIR = ./
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12284_LZBHHJUSIITSQJCF
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2700_PPDGGNCWCJKXXJSC
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -124,8 +107,6 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 VSCODE_CODE_CACHE_PATH = C:\Users\celfe\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# makefile (from 'Makefile', line 22)
-DELOBJ = $(OBJ)
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -142,14 +123,10 @@ MAKELEVEL := 0
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
-# makefile (from 'Makefile', line 11)
-APPNAME = myapp 
-# makefile (from 'Makefile', line 6)
-CC = g++
 # default
 MAKE_VERSION := 3.82.90
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := 
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # automatic
@@ -159,8 +136,7 @@ LOCALAPPDATA = C:\Users\celfe\AppData\Local
 # environment
 PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
-MAKE_COMMAND 
- := make.exe
+MAKE_COMMAND := make.exe
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
 # default
@@ -173,8 +149,6 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
 OS = Windows_NT
 # environment
 VSCODE_IPC_HOOK = \\.\pipe\8ba051d7ed0d2a54bccf191fedd9c6c2-1.67.2-main-sock
-# makefile (from 'Makefile', line 12)
-EXT = .cpp
 # environment
 HOMEPATH = \Users\celfe
 # environment
@@ -201,12 +175,8 @@ COMSPEC = C:\WINDOWS\system32\cmd.exe
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
-# makefile (from 'Makefile', line 14)
-OBJDIR = ./
 # environment
 LC_ALL = C
-# makefile (from 'Makefile', line 26)
-WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 # automatic
 ^F = $(notdir $^)
 # default
@@ -223,18 +193,16 @@ PYCHARM = C:\Program Files\JetBrains\PyCharm 2021.3\bin;
 .INCLUDE_DIRS = C:/MinGW/include
 # default
 .RECIPEPREFIX := 
-# makefile (from 'Makefile', line 25)
-EXE = .exe
 # environment
 LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 12284
+VSCODE_PID = 2700
 # environment
 USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=18/158=11%
+# Load=95/1024=9%, Rehash=0, Collisions=11/111=10%
 
 # Pattern-specific Variable Values
 
@@ -245,11 +213,9 @@ USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # : could not be stat'd.
 # C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/celfe/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652993706): 4 files, no impossibilities.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1639715969): 39 files, no impossibilities.
-# . (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574, mtime 1654310187): 11 files, no impossibilities.
-# ./ (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/, mtime 1654310187): 11 files, no impossibilities.
+# . (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574, mtime 1654402660): 10 files, no impossibilities.
 # C:\Users\celfe\.cargo\bin (key C:/Users/celfe/.cargo/bin, mtime 1645560141): 14 files, no impossibilities.
-# C:\MinGW\bin\ (key C:/MinGW/bin/, mtime 1652763006):  
-128 files, no impossibilities.
+# C:\MinGW\bin\ (key C:/MinGW/bin/, mtime 1652763006): 128 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1640588178): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1652763006): 128 files, no impossibilities.
@@ -258,67 +224,24 @@ USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # C:\Program Files\JetBrains\PyCharm 2021.3\bin (key C:/Program Files/JetBrains/PyCharm 2021.3/bin, mtime 1639953215): 29 files, no impossibilities.
 # C:\Program Files\MATLAB\R2021b\bin (key C:/Program Files/MATLAB/R2021b/bin, mtime 1639797393): 16 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1652254432): 163 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1654002882): 2900 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1654383050): 2900 files, no impossibilities.
 # C:\Program Files\JetBrains\CLion 2021.3\bin (key C:/Program Files/JetBrains/CLion 2021.3/bin, mtime 1639951671): 37 files, no impossibilities.
-# C:\Users\celfe\AppData\Local\Microsoft\WindowsApps (key C:/Users/celfe/AppData/Local/Microsoft/WindowsApps, mtime 1654266233): 41 files, no impossibilities.
+# C:\Users\celfe\AppData\Local\Microsoft\WindowsApps (key C:/Users/celfe/AppData/Local/Microsoft/WindowsApps, mtime 1654666287): 43 files, no impossibilities.
 # C:\Program Files (x86)\VMware\VMware Workstation\bin\ (key C:/Program Files (x86)/VMware/VMware Workstation/bin/, mtime 1639718915): 4 files, no impossibilities.
 
-# 3680 files, no impossibilities in 19 directories.
+# 3670 files, no impossibilities in 18 directories.
 
 # Implicit Rules
 
-%.d: %.cpp
-#  recipe to execute (from 'Makefile', 
- line 40):
-	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
-
-%.o: %.cpp
-#  recipe to execute (from 'Makefile', line 47):
-	$(CC) $(CXXFLAGS) -o $@ -c $<
-
-# 2 implicit rules, 0 (0.0%) terminal.
+# No implicit rules.
 
 # Files
 
-myapp:
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := myapp
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/16=6%
-#  recipe to execute (from 'Makefile', line 36):
-	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
-
-all: myapp
+# Not a target:
+all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
-
-.PHONY: clean cleandep cleanw cleandepw
-#  Implicit rule search has not been done.
-#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
@@ -330,17 +253,16 @@ all: myapp
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-26 11:19:48
-#  File has been updated.
-#  Successfully updated.
-
-cleanw:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 64):
-	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -348,47 +270,31 @@ cleanw:
 #  Modification time never checked.
 #  File has not been updated.
 
-cleandep:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 58):
-	$(RM) $(DEP)
-
-cleandepw:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 69):
-	$(DEL) $(DEP)
-
-clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 53):
-	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/35=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
-# No ge 
-neral ('VPATH' variable) search path.
+# No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (4) / strings = 3478 / storage = 51841 B / avg = 14 B
-# current buf: size = 8174 B / used = 2858 B / count = 181 / avg = 15 B
-# other used: total = 43667 B / count = 3297 / avg = 13 B
-# other free: total = 61 B / max = 19 B / min = 2 B / avg = 10 B
+# strcache buffers: 7 (5) / strings = 3472 / storage = 51856 B / avg = 14 B
+# current buf: size = 8174 B / used = 2857 B / count = 175 / avg = 16 B
+# other used: total = 43682 B / count = 3297 / avg = 13 B
+# other free: total = 45 B / max = 16 B / min = 1 B / avg = 7 B
 
-# strcache performance: lookups = 3735 / hit rate = 6%
+# strcache performance: lookups = 3696 / hit rate = 6%
 # hash-table stats:
-# Load=3478/8192=42%, Rehash=0, Collisions=1254/3735=34%
-# Finished Make data base on Sat Jun 04 08:03:01 2022
+# Load=3472/8192=42%, Rehash=0, Collisions=1226/3696=33%
+# Finished Make data base on Thu Jun 09 10:42:04 2022
 
  
+make.exe: *** No rule to make target 'all'.  Stop.
+

@@ -1,10 +1,15 @@
 // Luis Fernando De León Silva A01754574 
 // Oswaldo Daniel Hernandez De Luna A01753911
 
+#define NOMBRE_ARCHIVO "BasePelículas.csv"
 #include "catalogo.h"
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include <string>
 #include <vector>
+
+using namespace std;
 
 Catalogo::Catalogo() {
 
@@ -24,8 +29,23 @@ Catalogo::Catalogo(vector<Pelicula> pels, vector<Serie> sre){
 }
 
 void Catalogo::cargarArchivo(){
+    ifstream archivo(NOMBRE_ARCHIVO);
+
+    if(archivo.is_open()) {
+        string linea;
+        char delimitador = ",";
+
+        while(getline(archivo, linea)) {
+            stringstream stream(linea);
         
-        // ESTE METODO AUN NO SE USARA 
+        
+        }
+
+    } else {
+        
+    }
+
+   
 }
 
 void Catalogo::mostrarCatalogo() {
