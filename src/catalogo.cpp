@@ -38,11 +38,17 @@ void Catalogo::cargarArchivo(){
         while(getline(archivo, linea)) {
             
             string simbolo1, simbolo2, simbolo3, simbolo4, simbolo5, simbolo6, simbolo7, simbolo, simbolo9;
-
+            vector<string> simbolos = vector<string>();
             cout << linea << endl;
-            
+
             stringstream token(linea);
 
+            
+            for (int i=0; i<11; i++) {
+                string simbolo_;
+                getline(token, simbolo_, ',');
+                cout << simbolo_ << endl;
+            }
         
         
         }
