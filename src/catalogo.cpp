@@ -28,34 +28,16 @@ Catalogo::Catalogo(vector<Pelicula> pels, vector<Serie> sre){
 
 }
 
-void Catalogo::cargarArchivo(){
-    ifstream archivo(NOMBRE_ARCHIVO);
+void Catalogo::cargarArchivo() {
+    ifstream archivo();
     archivo.open("BasePelículas.csv");
 
-    if(archivo.is_open()) {
-        string linea;
+    if(archivo.fail()) {
+        puts("No se puede abrir el programa");
+        exit(1);
+    }
 
-        while(getline(archivo, linea)) {
-            
-            string simbolo1, simbolo2, simbolo3, simbolo4, simbolo5, simbolo6, simbolo7, simbolo, simbolo9;
-            vector<string> simbolos = vector<string>();
-            cout << linea << endl;
-
-            stringstream token(linea);
-
-            
-            for (int i=0; i<11; i++) {
-                string simbolo_;
-                getline(token, simbolo_, ',');
-                cout << simbolo_ << endl;
-            }
-        
-        
-        }
-
-    } else {
-        puts("No se ha abierto el archivo");
-
+    while(getline(linea, archivo)) {
         
     }
 
