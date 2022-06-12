@@ -9,7 +9,7 @@ using namespace std;
 
 
 Episodio::Episodio() : Video(),
-        numEpisodio(0), temporada(0)  {
+    numEpisodio(0), temporada(0)  {
 }
 
 

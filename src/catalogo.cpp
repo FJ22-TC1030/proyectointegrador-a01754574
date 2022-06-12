@@ -33,13 +33,19 @@ void Catalogo::cargarArchivo() {
 
     string linea = string();
 
-    if(archivo.fail()) {
+    /*if(archivo.fail()) {
         puts("No se puede abrir el programa");
         exit(1);
-    }
+    }*/
 
-    while(getline(archivo, linea)) {
-         
+
+    while(getline(archivo, linea, '\n')) {
+        stringstream ss(linea);
+        string dato;
+        cout << "DAATOS DE LINEA: " <<endl;
+        while (getline(ss, dato, ',')) {
+            cout << dato << endl;
+        }
     }
 
    

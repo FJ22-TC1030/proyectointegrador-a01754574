@@ -24,7 +24,7 @@ string Pelicula::getGeneroPelicula() {return generoPelicula;}
 
 int Pelicula::getDuracionPelicula() {return getDuracionVideo();}
 
-float Pelicula::getCalificacion() {return getCalificacion();}
+float Pelicula::getCalificacion() {return getCalifVideo();}
 
 string Pelicula::getFechaEstreno(){return getFechaEstreno();}
 

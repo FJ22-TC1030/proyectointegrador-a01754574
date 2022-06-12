@@ -17,10 +17,10 @@ int main() {
 
     // Serie.agregarEpisodio(Episodio);
 
-    // Catalogo Catalogo;
+    Catalogo Catalogo;
 
-/*
-    Catalogo.agregarSeries(Serie);
+
+   /* Catalogo.agregarSeries(Serie);
     Catalogo.agregarPeliculas(Pelicula);
     cout << "\n***SE IMPRIME EL CATALOGO***" << endl;
     cout << "\n***PELICULAS***" << endl;
@@ -28,9 +28,11 @@ int main() {
 
     cout << "\n***SERIES***" << endl;
     Catalogo.mostrarSeries();
-    */
+    
     cout << Pelicula.getNombrePelicula();
-    cout << Serie.getNombreSerie();
+    cout << Serie.getNombreSerie();*/
+
+    Catalogo.cargarArchivo();
 
 
     return 0;
