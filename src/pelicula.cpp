@@ -18,7 +18,7 @@ generoPelicula(genero_Pelicula) { }
         
 string Pelicula::getIDPelicula() {return getIDVideo();}
 
-string Pelicula::getNombrePelicula() {return getNombrePelicula();}
+string Pelicula::getNombrePelicula() {return getNombreVideo();}
 
 string Pelicula::getGeneroPelicula() {return generoPelicula;}
 
