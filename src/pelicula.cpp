@@ -9,50 +9,23 @@
 
 using namespace std;
 
-Pelicula::Pelicula() {
+Pelicula::Pelicula() : Video(), generoPelicula("S/G") {}
 
-    idPelicula = "000";
-
-    NombrePelicula = "S/T";
-
-    generoPelicula = "S/G";
-
-    duracionPelicula = 0;
-
-    calificacion = 0;
-
-    FechaEstreno = "00/00/00";
-
-
-}
-
-Pelicula::Pelicula(string id_Pelicula, string Nombre_Pelicula, string genero_Pelicula, int duracion_Pelicula,
-    float calificacion_new, string Fecha_Estreno) {
-
-    idPelicula = id_Pelicula; 
-
-    NombrePelicula = Nombre_Pelicula;
-
-    generoPelicula = genero_Pelicula;
-
-    duracionPelicula = duracion_Pelicula;
-
-    calificacion = calificacion_new;
-
-    FechaEstreno = Fecha_Estreno;  
-
-}
+// string Nombre_video, string ID_video, string fecha_Estreno, float calif_video, int duracion_video
+Pelicula::Pelicula(string Nombre_Pelicula, string ID_Pelicula, string fecha_Pelicula, float calif_Pelicula, int duracion_Pelicula, string genero_Pelicula)
+: Video(Nombre_Pelicula, ID_Pelicula,  fecha_Pelicula, calif_Pelicula, duracion_Pelicula),
+generoPelicula(genero_Pelicula) { }
         
-string Pelicula::getIDPelicula() {return idPelicula;}
+string Pelicula::getIDPelicula() {return getIDVideo();}
 
-string Pelicula::getNombrePelicula() {return NombrePelicula;}
+string Pelicula::getNombrePelicula() {return getNombrePelicula();}
 
 string Pelicula::getGeneroPelicula() {return generoPelicula;}
 
-int Pelicula::getDuracionPelicula() {return duracionPelicula;}
+int Pelicula::getDuracionPelicula() {return getDuracionVideo();}
 
-float Pelicula::getCalificacion() {return calificacion;}
+float Pelicula::getCalificacion() {return getCalificacion();}
 
-string Pelicula::getFechaEstreno(){return FechaEstreno;}
+string Pelicula::getFechaEstreno(){return getFechaEstreno();}
 
-void Pelicula::setCalifPelicula(float newCalif){calificacion = newCalif;}
+void Pelicula::setCalifPelicula(float newCalif){setCalifVideo(newCalif);}

@@ -29,16 +29,17 @@ Catalogo::Catalogo(vector<Pelicula> pels, vector<Serie> sre){
 }
 
 void Catalogo::cargarArchivo() {
-    ifstream archivo();
-    archivo.open("BasePelículas.csv");
+    ifstream archivo("BasePelículas.csv");
+
+    string linea = string();
 
     if(archivo.fail()) {
         puts("No se puede abrir el programa");
         exit(1);
     }
 
-    while(getline(linea, archivo)) {
-        
+    while(getline(archivo, linea)) {
+         
     }
 
    

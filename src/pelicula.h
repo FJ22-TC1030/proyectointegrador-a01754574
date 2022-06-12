@@ -16,17 +16,11 @@ using namespace std;
 class Pelicula: public Video {
 
     private:
-        string idPelicula;
-        string NombrePelicula;
         string generoPelicula;
-        int duracionPelicula;
-        float calificacion;
-        string FechaEstreno;
     
     public:
         Pelicula();
-        Pelicula(string id_Pelicula, string Nombre_Pelicula, string genero_Pelicula, int duracion_Pelicula,
-        float calificacion_new, string Fecha_Estreno);
+        Pelicula(string Nombre_Pelicula, string ID_Pelicula, string fecha_Pelicula, float calif_Pelicula, int duracion_Pelicula, string genero_Pelicula);
         
         string getIDPelicula();
         string getNombrePelicula();

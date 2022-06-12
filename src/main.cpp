@@ -9,17 +9,17 @@ using namespace std;
 
 
 int main() {
-
-    Episodio Episodio("tt1668899","Winter is coming",1,1,"04/17/2011", 9);
+    Episodio Episodio("tt1668899","Winter is coming",1,1,"04/17/2011", 9, 9);
 
     Pelicula Pelicula("tt0107290","Jurassic Park", "Action, Adventure, Sci-Fi, Thriller", 127, 8.1, "11/06/1993");
 
     Serie Serie("tt14800055","Game of Thrones", "Action, Adventure, Drama, Fantasy, Romance", 57, 8.8);
 
-    Serie.agregarEpisodio(Episodio);
+    // Serie.agregarEpisodio(Episodio);
 
-    Catalogo Catalogo;
+    // Catalogo Catalogo;
 
+/*
     Catalogo.agregarSeries(Serie);
     Catalogo.agregarPeliculas(Pelicula);
     cout << "\n***SE IMPRIME EL CATALOGO***" << endl;
@@ -28,6 +28,10 @@ int main() {
 
     cout << "\n***SERIES***" << endl;
     Catalogo.mostrarSeries();
+    */
+    cout << Pelicula.getNombrePelicula();
+    cout << Serie.getNombreSerie();
+
 
     return 0;
 }

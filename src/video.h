@@ -18,15 +18,17 @@ class Video {
         string IDvideo;
         string fechaEstreno;
         float califVideo;
+        int duracionVideo;
 
     public:
 
         Video();
-        Video(string Nombre_video, string ID_video, string fecha_Estreno, float calif_video);
+        Video(string Nombre_video, string ID_video, string fecha_Estreno, float calif_video, int duracion_video);
 
         string getNombreVideo();
         string getIDVideo();
         string getFechaEstreno();
+        int getDuracionVideo();
         float getCalifVideo();
         void setCalifVideo(float NewCalif);
 };

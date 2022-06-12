@@ -15,17 +15,13 @@ using namespace std;
 class Episodio: public Video {
 
     private:
-        string idEpisodio;
-        string Nombreepisodio;
         int numEpisodio;
         int temporada;
-        string fechaestreno;
-        int calificacionEp;
         
     public:
         Episodio();
         Episodio(string id_Episodio, string Nombre_episodio, int num_Episodio, int temporada_new, 
-        string fecha_estreno, int calificacion_Ep);
+        string fecha_estreno, int calificacion_Ep, float duracionEp);
 
         string getIdEpisodio();
         string getNombre_episodio();
