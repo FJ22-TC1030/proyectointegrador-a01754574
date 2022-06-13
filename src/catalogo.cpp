@@ -42,7 +42,7 @@ void Catalogo::cargarArchivo() {
     while(getline(archivo, linea, '\n')) {
         stringstream ss(linea);
         string dato;
-        cout << "DAATOS DE LINEA: " <<endl;
+        cout << "DAtos DE LINEA: " <<endl;
         while (getline(ss, dato, ',')) {
             cout << dato << endl;
         }
