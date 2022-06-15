@@ -1,0 +1,18 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/src'
+ 
+make.exe: Leaving directory 'c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/src'
+ 
+make.exe: Entering directory 'c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/src'
+g++ -g -std=c++11  -o pelicula.o -c pelicula.cpp
+ 
+g++ -g -std=c++11  -o main.o -c main.cpp
+ 
+g++ -g -std=c++11  -o video.o -c video.cpp
+g++ -g -std=c++11  -o serie.o -c serie.cpp
+g++ -g -std=c++11  -o episodio.o -c episodio.cpp
+ 
+g++ -g -std=c++11  -o catalogo.o -c catalogo.cpp
+g++ -g -std=c++11  -o myapp pelicula.o main.o video.o serie.o episodio.o catalogo.o 
+make.exe: Leaving directory 'c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/src'
+ 

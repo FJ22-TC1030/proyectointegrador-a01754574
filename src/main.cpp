@@ -33,7 +33,7 @@ int main() {
     cout << Serie.getNombreSerie();*/
 
     Catalogo.cargarArchivo();
-
+    Catalogo.mostrarCatalogo();
 
     return 0;
 }

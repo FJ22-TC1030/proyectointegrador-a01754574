@@ -1,0 +1,579 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Jun 14 16:43:18 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 18)
+OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
+# makefile (from 'Makefile', line 17)
+SRC = $(wildcard $(SRCDIR)/*$(EXT))
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/src
+# default
+SHELL := sh.exe
+# makefile (from 'Makefile', line 21)
+RM = rm
+# environment
+CLION = C:\Program Files\JetBrains\CLion 2021.3\bin;
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\celfe\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'catalogo.d', line 1)
+MAKEFILE_LIST :=  Makefile pelicula.d main.d video.d serie.d episodio.d catalogo.d
+# environment
+TMP = C:\Users\celfe\AppData\Local\Temp
+# makefile (from 'Makefile', line 7)
+CXXFLAGS = -g -std=c++11 
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# makefile (from 'Makefile', line 24)
+DEL = del
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-b0d8029a-f28d-4ddd-9f48-6b9d1c414477-sock
+# environment
+VSCODE_CWD = C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code
+# environment
+PATH = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2021b\bin;C:\MinGW\bin\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Users\celfe/.local/bin;C:\Users\celfe\.cargo\bin;C:\Users\celfe\AppData\Local\Microsoft\WindowsApps;C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2021.3\bin;;C:\Program Files\JetBrains\PyCharm 2021.3\bin;;C:\MinGW\bin;C:\Users\celfe\.local\bin;
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+ZES_ENABLE_SYSMAN = 1
+# makefile (from 'Makefile', line 19)
+DEP = $(OB 
+J:$(OBJDIR)/%.o=%.d)
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\celfe
+# environment
+MINITAB_LICENSE_FILE = C:\ProgramData\Minitab\Minitab 21
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 4
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 8)
+LDFLAGS = 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# makefile (from 'Makefile', line 13)
+SRCDIR = ./
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13608_YAXCRLZHUPLJFXMV
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = LAPYAYO2-2002
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ASL.LOG = Destination=file
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = celfe
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\celfe\AppData\Roaming\Code\CachedData\4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from 'Makefile', line 22)
+DELOBJ = $(OBJ)
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\LAPYAYO2-2002
+# environment
+ONEDRIVECONSUMER = C:\Users\celfe\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = LAPYAYO2-2002
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 11)
+APPNAME = myapp 
+# makefile (from 'Makefile', line 6)
+CC = g++
+# default
+MAKE_VERSION := 3.82.90
+# makefile
+.DEFAULT_GOAL := all
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\celfe\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\8ba051d7ed0d2a54bccf191fedd9c6c2-1.68.0-main-sock
+# makefile (from 'Makefile', line 12)
+EXT = .cpp
+# environment
+HOMEPATH = \Users\celfe
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\celfe\AppData\Roaming
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# environment
+TEMP = C:\Users\celfe\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 14)
+OBJDIR = ./
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 26)
+WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 8e0c
+# environment
+PYCHARM = C:\Program Files\JetBrains\PyCharm 2021.3\bin;
+# default
+.INCLUDE_DIRS = C:/MinGW/include
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 25)
+EXE = .exe
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+VSCODE_PID = 13608
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
+# variable set hash-table stats:
+# Load=111/1024=11%, Rehash=0, Collisions=18/171=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# : could not be stat'd.
+# C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/celfe/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1654800161): 4 files, no impossibilities.
+# C:\Users\celfe/.local/bin (key C:/Users/celfe/.local/bin, mtime 1654839502): 6 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1639715969): 39 files, no impossibilities.
+# . (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/src, mtime 1655242988): 31 files, no impossibilities.
+# ./ (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574/src/, mtime 1655242988): 31 files, no impossibilities.
+# C:\Users\celfe\.cargo\bin (key C:/Users/celfe/.cargo/bin, mtime 1654847876): 19 files, no impossibilities.
+# C:\MinGW\bin\ (key C:/MinGW/bin/, mtime 1652763006): 128 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1640588178): 8 files, no impossibilities.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1652763006): 128 files, no impossibilities.
+# C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1652762445): 7 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1653235915): 140 files, no impossibilities.
+# C:\Program Files\JetBrains\PyCharm 2021.3\bin (key C:/Program Files/JetBrains/PyCharm 2021.3/bin, mtime 1639953215): 29 files, no impossibilities.
+# C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin (key C:/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin, mtime 1654845740): 127 files, no impossibilities.
+# C:\Program Files\MATLAB\R2021b\bin (key C:/Program Files/MATLAB/R2021b/bin, mtime 1639797393): 16 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1652254432): 163 files, no impossibilities.
+# C:\Users\celfe\.local\bin (key C:/Users/celfe/.local/bin, mtime 1654839502): 6 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1654967080): 2980 files, no impossibilities.
+# C:\Program Files\JetBrains\CLion 2021.3\bin (key C:/Program Files/JetBrains/CLion 2021.3/bin, mtime 1639951671): 37 files, no impossibilities.
+# C:\Users\celfe\AppData\Local\Microsoft\WindowsApps (key C:/Users/celfe/AppData/Local/Microsoft/WindowsApps, mtime 1655182947): 43 files, no impossibilities.
+# C:\Program Files (x86)\VMware\VMware Workstation\bin\ (key C:/Program Files (x86)/VMware/VMware Workstation/bin/, mtime 1639718915): 4 files, no impossibilities.
+
+# 3946 files, no impossibilities in 22 directories.
+
+# Implicit Rules
+
+%.d: %.cpp
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+%.o: %.cpp
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+myapp: pelicula.o main.o video.o serie.o episodio.o catalogo.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := myapp
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := pelicula.o main.o video.o serie.o episodio.o catalogo.o
+# automatic
+# | := 
+# automatic
+# < := pelicula.o
+# automatic
+# ^ := pelicula.o main.o video.o serie.o episodio.o catalogo.o
+# automatic
+# ? := pelicula.o main.o video.o serie.o episodio.o catalogo.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/16=6%
+#  recipe to execute (from 'Makefile', line 36):
+	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+serie.d: serie.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'serie'
+#  Last modified 2022-06-14 16:43:16
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+all: myapp
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+.PHONY: clean cleandep cleanw cleandepw
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pelicula.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+episodio.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pelicula.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+episodio.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+video.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Successfully updated.
+
+serie.o: serie.cpp serie.cpp serie.h episodio.h video.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'serie'
+#  Last modified 2022-06-12 01:39:14
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+catalogo.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 22:18:30
+#  File has been updated.
+#  Successfully updated.
+
+cleanw:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 64):
+	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
+
+# Not a target:
+video.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 01:38:58
+#  File has been updated.
+#  Successfully updated.
+
+pelicula.d: pelicula.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'pelicula'
+#  Last modified 2022-06-14 16:43:16
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+episodio.d: episodio.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'episodio'
+#  Last modified 2022-06-14 16:43:16
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+# Not a target:
+catalogo.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 20:06:10
+#  File has been updated.
+#  Successfully updated.
+
+main.d: main.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-06-14 16:43:16
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+video.d: video.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'video'
+#  Last modified 2022-06-14 16:43:16
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleandep:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 58):
+	$(RM) $(DEP)
+
+catalogo.d: catalogo.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'catalogo'
+#  Last modified 2022-06-14 16:43:15
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+cleandepw:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 69):
+	$(DEL) $(DEP)
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 53):
+	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
+
+pelicula.o: pelicula.cpp pelicula.cpp pelicula.h video.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'pelicula'
+#  Last modified 2022-06-12 01:39:13
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+episodio.o: episodio.cpp episodio.cpp episodio.h video.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'episodio'
+#  Last modified 2022-06-12 01:39:13
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+main.o: main.cpp main.cpp catalogo.h pelicula.h video.h serie.h episodio.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-06-12 01:39:13
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+serie.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 22:18:40
+#  File has been updated.
+#  Successfully updated.
+
+video.o: video.cpp video.cpp video.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'video'
+#  Last modified 2022-06-12 01:39:13
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+catalogo.o: catalogo.cpp catalogo.cpp catalogo.h pelicula.h video.h serie.h episodio.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'catalogo'
+#  Last modified 2022-06-13 11:23:05
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+serie.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 22:18:34
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=33/1024=3%, Rehash=0, Collisions=1/130=1%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 7 (6) / strings = 3719 / storage = 55898 B / avg = 15 B
+# current buf: size = 8174 B / used = 6921 B / count = 463 / avg = 14 B
+# other used: total = 47724 B / count = 3256 / avg = 14 B
+# other free: total = 67 B / max = 14 B / min = 9 B / avg = 11 B
+
+# strcache performance: lookups = 4088 / hit rate = 9%
+# hash-table stats:
+# Load=3719/8192=45%, Rehash=0, Collisions=1512/4088=37%
+# Finished Make data base on Tue Jun 14 16:43:18 2022
+
+ 

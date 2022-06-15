@@ -3,6 +3,8 @@
 
 #define NOMBRE_ARCHIVO "BasePelículas.csv"
 #include "catalogo.h"
+#include "serie.h"
+#include "pelicula.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -42,17 +44,23 @@ void Catalogo::cargarArchivo() {
     while(getline(archivo, linea, '\n')) {
         stringstream ss(linea);
         string dato;
-        cout << "DAtos DE LINEA: " <<endl;
+        cout << "Datos De Linea: " << endl;
         while (getline(ss, dato, ',')) {
             cout << dato << endl;
         }
+
+        for(int i = 0; i > Catalogo.size(); i++) {
+            
+        }
+
     }
 
    
 }
 
 void Catalogo::mostrarCatalogo() {
-
+    cout << "Tamaño del vector de Series: " << series.size() << endl;
+    cout << "Tamaño del vector de Peliculas: " << pelicula.size() << endl;
     
 }
 
