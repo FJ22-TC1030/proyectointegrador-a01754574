@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu Jun 09 10:42:04 2022
+# Make data base, printed on Fri Jun 17 23:31:56 2022
 
 # Variables
 
@@ -56,11 +56,11 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-232715a9-753e-42ec-9746-3f802d83e1a0-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-17e8923d-3b5e-48fa-a951-f6346e154f61-sock
 # environment
 VSCODE_CWD = C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code
 # environment
-PATH = C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2021b\bin;C:\MinGW\bin\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Users\celfe\.cargo\bin;C:\Users\celfe\AppData\Local\Microsoft\WindowsApps;C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2021.3\bin;;C:\Program Files\JetBrains\PyCharm 2021.3\bin;;C:\MinGW\bin;
+PATH = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2021b\bin;C:\MinGW\bin\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Users\celfe/.local/bin;C:\Users\celfe\.cargo\bin;C:\Users\celfe\AppData\Local\Microsoft\WindowsApps;C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2021.3\bin;;C:\Program Files\JetBrains\PyCharm 2021.3\bin;;C:\MinGW\bin;C:\Users\celfe\.local\bin;
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -84,7 +84,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2700_PPDGGNCWCJKXXJSC
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7504_KMAJHWODKJYVWLDT
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -104,7 +104,7 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\celfe\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = C:\Users\celfe\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -148,7 +148,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\8ba051d7ed0d2a54bccf191fedd9c6c2-1.67.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\8ba051d7ed0d2a54bccf191fedd9c6c2-1.68.1-main-sock
 # environment
 HOMEPATH = \Users\celfe
 # environment
@@ -198,7 +198,7 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 2700
+VSCODE_PID = 7504
 # environment
 USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # variable set hash-table stats:
@@ -211,25 +211,28 @@ USERDOMAIN_ROAMINGPROFILE = LAPYAYO2-2002
 # Directories
 
 # : could not be stat'd.
-# C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/celfe/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652993706): 4 files, no impossibilities.
+# C:\Users\celfe\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/celfe/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1655331225): 4 files, no impossibilities.
+# C:\Users\celfe/.local/bin (key C:/Users/celfe/.local/bin, mtime 1654839502): 6 files, no impossibilities.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1639715969): 39 files, no impossibilities.
-# . (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574, mtime 1654402660): 10 files, no impossibilities.
-# C:\Users\celfe\.cargo\bin (key C:/Users/celfe/.cargo/bin, mtime 1645560141): 14 files, no impossibilities.
+# . (key c:/Users/celfe/Documents/Programaci�n/C++/proyectointegrador-a01754574, mtime 1655014857): 11 files, no impossibilities.
+# C:\Users\celfe\.cargo\bin (key C:/Users/celfe/.cargo/bin, mtime 1654847876): 19 files, no impossibilities.
 # C:\MinGW\bin\ (key C:/MinGW/bin/, mtime 1652763006): 128 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1640588178): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1652763006): 128 files, no impossibilities.
 # C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1652762445): 7 files, no impossibilities.
-# C:\WINDOWS (key C:/WINDOWS, mtime 1653235915): 140 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1655310513): 140 files, no impossibilities.
 # C:\Program Files\JetBrains\PyCharm 2021.3\bin (key C:/Program Files/JetBrains/PyCharm 2021.3/bin, mtime 1639953215): 29 files, no impossibilities.
+# C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin (key C:/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin, mtime 1654845740): 127 files, no impossibilities.
 # C:\Program Files\MATLAB\R2021b\bin (key C:/Program Files/MATLAB/R2021b/bin, mtime 1639797393): 16 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1652254432): 163 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1654383050): 2900 files, no impossibilities.
+# C:\Users\celfe\.local\bin (key C:/Users/celfe/.local/bin, mtime 1654839502): 6 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1655335876): 2980 files, no impossibilities.
 # C:\Program Files\JetBrains\CLion 2021.3\bin (key C:/Program Files/JetBrains/CLion 2021.3/bin, mtime 1639951671): 37 files, no impossibilities.
-# C:\Users\celfe\AppData\Local\Microsoft\WindowsApps (key C:/Users/celfe/AppData/Local/Microsoft/WindowsApps, mtime 1654666287): 43 files, no impossibilities.
+# C:\Users\celfe\AppData\Local\Microsoft\WindowsApps (key C:/Users/celfe/AppData/Local/Microsoft/WindowsApps, mtime 1655182947): 43 files, no impossibilities.
 # C:\Program Files (x86)\VMware\VMware Workstation\bin\ (key C:/Program Files (x86)/VMware/VMware Workstation/bin/, mtime 1639718915): 4 files, no impossibilities.
 
-# 3670 files, no impossibilities in 18 directories.
+# 3895 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -285,15 +288,15 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (5) / strings = 3472 / storage = 51856 B / avg = 14 B
-# current buf: size = 8174 B / used = 2857 B / count = 175 / avg = 16 B
-# other used: total = 43682 B / count = 3297 / avg = 13 B
-# other free: total = 45 B / max = 16 B / min = 1 B / avg = 7 B
+# strcache buffers: 7 (6) / strings = 3687 / storage = 55678 B / avg = 15 B
+# current buf: size = 8174 B / used = 6707 B / count = 441 / avg = 15 B
+# other used: total = 47504 B / count = 3246 / avg = 14 B
+# other free: total = 73 B / max = 15 B / min = 7 B / avg = 12 B
 
-# strcache performance: lookups = 3696 / hit rate = 6%
+# strcache performance: lookups = 3918 / hit rate = 5%
 # hash-table stats:
-# Load=3472/8192=42%, Rehash=0, Collisions=1226/3696=33%
-# Finished Make data base on Thu Jun 09 10:42:04 2022
+# Load=3687/8192=45%, Rehash=0, Collisions=1429/3918=36%
+# Finished Make data base on Fri Jun 17 23:31:56 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.

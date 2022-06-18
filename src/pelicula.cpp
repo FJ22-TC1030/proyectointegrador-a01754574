@@ -2,30 +2,68 @@
 // Oswaldo Daniel Hernandez De Luna A01753911
 
 #include "pelicula.h"
+#include "video.h"
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include <string>
 #include <vector> 
-
 
 using namespace std;
 
 Pelicula::Pelicula() : Video(), generoPelicula("S/G") {}
 
-// string Nombre_video, string ID_video, string fecha_Estreno, float calif_video, int duracion_video
-Pelicula::Pelicula(string Nombre_Pelicula, string ID_Pelicula, string fecha_Pelicula, float calif_Pelicula, int duracion_Pelicula, string genero_Pelicula)
-: Video(Nombre_Pelicula, ID_Pelicula,  fecha_Pelicula, calif_Pelicula, duracion_Pelicula),
-generoPelicula(genero_Pelicula) { }
-        
-string Pelicula::getIDPelicula() {return getIDVideo();}
-
-string Pelicula::getNombrePelicula() {return getNombreVideo();}
+Pelicula::Pelicula(string _ID, string _nombre, int _duracion, string _genero, float _calif, string _fechaEstreno):
+    video(_ID, _nombre, _duracion, _genero, _calif) {
+        generoPelicula = _genero;
+}
 
 string Pelicula::getGeneroPelicula() {return generoPelicula;}
 
-int Pelicula::getDuracionPelicula() {return getDuracionVideo();}
+void Pelicula::cambiarCalif(float califP) {
+    setCalifVideo(califP);
+}
 
-float Pelicula::getCalificacion() {return getCalifVideo();}
+void Pelicula::imprimir() {
+    Video::imprimir();
+    
+    cout << "\n*Peliculas*" << endl;
+    cout << "Genero Peliculas: " << generoPelicula;
+}
 
-string Pelicula::getFechaEstreno(){return getFechaEstreno();}
+bool Pelicula::operator >= (float cal) {
+    
+    if(getCalifVideo() >= cal) {
+        return true;
+    } else {
+        return false;
+    }
 
-void Pelicula::setCalifPelicula(float newCalif){setCalifVideo(newCalif);}
+}
+
+bool Pelicula::operator == (string gen) {
+    
+    stringstream token(generoPelicula);
+    string gen1, gen2, gen3, gen4, gen5, gen6;
+
+    getline(token, gen1, '/');
+    getline(token, gen2, '/');
+    getline(token, gen3, '/');
+    getline(token, gen4, '/');
+    getline(token, gen5, '/');
+    getline(token, gen6, '/');
+
+    if(gen1 == generoPelicula | gen2 == generoPelicula | gen3 == generoPelicula | 
+    gen4 == generoPelicula | gen5 == generoPelicula | gen6 == generoPelicula) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+void Pelicula::cambiarCalif(float califP) {
+    setCalifVideo(califP);
+}
+
+
+        

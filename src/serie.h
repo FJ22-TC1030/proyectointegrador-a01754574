@@ -17,27 +17,23 @@ class Serie {
 
     private:
         vector<Episodio> episodios;
-        string idSerie;
-        string nombreSerie;
-        string generoSerie;
-        int duracionSerie;
-        int calificacionSer;
+        string IDSerie, nombreSerie, generoSerie;
     
     public:
         Serie();
-        Serie(string id_Serie, string nombre_Serie, string genero_Serie, 
-        int duracion_Serie, int calificacion_Ser);
-        vector<Episodio> getEpisodio();
+        Serie(string _IDSerie, string _nombreSerie, string _generoSerie);
+
         string getIdSerie();
         string getNombreSerie();
         string getGeneroSerie();
-        int getDuracionSerie();
-        int getCalificacionSer();
+        
+        void agregarEpisodio(Episodio _episodio);
+        void buscarEpisodio(string nombre, float c);
+
         void imprimir();
 
-        void agregarEpisodio(Episodio episodio1);
+        bool operator == (string gen);
 
-        void setCalifSerie(float newCalifSerie);
 
 
 };

@@ -6,7 +6,6 @@
 
 #pragma once
 #include <iostream>
-#include <iostream>
 #include <string>
 
 using namespace std;
@@ -14,24 +13,23 @@ using namespace std;
 class Video {
     
     private:
-        string NombreVideo;
-        string IDvideo;
-        string fechaEstreno;
-        float califVideo;
-        int duracionVideo;
+        string ID, nombre, fechaEstreno;
+        float calif;
+        int duracion;
 
     public:
-
         Video();
-        Video(string Nombre_video, string ID_video, string fecha_Estreno, float calif_video, int duracion_video);
+        Video(string _ID, string _nombre, string _fechaEstreno, float _calif, int _duracion);
 
-        string getNombreVideo();
         string getIDVideo();
+        string getNombreVideo();
         string getFechaEstreno();
         int getDuracionVideo();
         float getCalifVideo();
         void setCalifVideo(float NewCalif);
-};
 
+        void imprimir();
+        
+};
 
 #endif
