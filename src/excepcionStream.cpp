@@ -10,4 +10,4 @@ ExcepcionStreaming::ExcepcionStreaming() {}
 
 ExcepcionStreaming::ExcepcionStreaming(string texto) {txt = texto;}
 
-void ExcepcionStreaming::mensaje() const {cout << "Valor igualito " << txt << endl;}
+void ExcepcionStreaming::mensaje() const {cout << "Hay un error: " << txt << endl;}
