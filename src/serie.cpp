@@ -22,9 +22,9 @@ Serie::Serie(string idS, string nombreS, string generoS) {
     genero_Serie = generoS;
 }
 
-string Serie::getIdSerie() { return id_Serie; }
-string Serie::getNombreSerie() { return nombre_Serie; }
-string Serie::getGeneroSerie() { return genero_Serie; }
+string Serie::getIdSerie() {return id_Serie;}
+string Serie::getNombreSerie() {return nombre_Serie;}
+string Serie::getGeneroSerie() {return genero_Serie;}
 
 void Serie::agregarEpisodio(Episodio episode){
     episodios.push_back(episode);
@@ -41,7 +41,7 @@ void Serie::imprimir(){
     }
 }
 
-void Serie::imprimir(float cal){
+void Serie::imprimir(float cal) {
     cout << "\nID: " << id_Serie << endl;
     cout << "Nombre: " << nombre_Serie << endl;
     cout << "Genero: " << genero_Serie << endl;
@@ -54,7 +54,7 @@ void Serie::imprimir(float cal){
     }
 }
 
-void Serie::buscarEpisodio(string nombre, float c){
+void Serie::buscarEpisodio(string nombre, float c) {
     for (int i = 0; i < episodios.size(); i++)
     {
         if (episodios[i].getNombreVideo() == nombre)

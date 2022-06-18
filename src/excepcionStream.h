@@ -7,18 +7,17 @@
 #include <string>
 
 using namespace std;
-using std::exception;
-using std::string;
 
-class ExcepcionStreaming: public exception {
+class ExcepcionStreaming: public Streaming {
 
     private:
-        string texto;
+        string txt;
 
     public:
         ExcepcionStreaming();
-        ExcepcionStreaming(string txt);
+        ExcepcionStreaming(string texto);
 
         void mensaje() const;
 };
+
 #endif

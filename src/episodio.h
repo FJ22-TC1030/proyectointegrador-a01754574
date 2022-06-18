@@ -20,7 +20,7 @@ class Episodio: public Video {
         
     public:
         Episodio();
-        Episodio(string ID_, string Nom, int duracion_, string fechaEstreno_, float calif_, int num_ep, int temp) : Video(ID_,Nom,duracion_,fechaEstreno_, calif_){}
+        Episodio(string ID_, string Nom, int duracion_, string fechaEstreno_, float calif_, int num_ep, int temp);
 
         
         int getNumEpisodio();

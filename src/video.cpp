@@ -15,17 +15,16 @@ Video::Video() {
 }
 
 Video::Video(string ID_, string Nom, int duracion_, string fechaEstreno_, int calif_){
-    Nombre = Nom;
     ID = ID_;
+    Nombre = Nom;
     fechaEstreno = fechaEstreno_;
     calif = calif_;
     duracion = duracion_;
 }
 
 
-       
+string Video::getIDVideo() {return ID;}      
 string Video::getNombreVideo() {return Nombre;}
-string Video::getIDVideo() {return ID;}
 string Video::getFechaEstreno() {return fechaEstreno;}
 float Video::getCalifVideo() {return calif;}
 int Video::getDuracionVideo() {return duracion;}

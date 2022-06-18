@@ -12,7 +12,7 @@
 using namespace std;
 
 
-Pelicula::Pelicula(){}
+Pelicula::Pelicula() {}
 // string Nombre_video, string ID_video, string fecha_Estreno, float calif_video, int duracion_video
 
 Pelicula::Pelicula(string ID_, string Nom, int duracion_, string fechaEstreno_, string genero_, float calif_): Video(ID_,Nom,duracion_,fechaEstreno_, calif_) {
@@ -29,13 +29,13 @@ void Pelicula::imprimir() {
     cout << "Genero Pelicula: " << generoPelicula;
 }
 
-bool Pelicula::operator>=(float cal){
+bool Pelicula::operator>=(float cal) {
     
-    if (getCalifVideo() >= cal) { return true;} 
+    if (getCalifVideo() >= cal) {return true;} 
     else {return false;}
 }
 
-bool Pelicula::operator==(string gen){
+bool Pelicula::operator==(string gen) {
     
     stringstream token(generoPelicula);
     string gen1, gen2, gen3, gen4, gen5, gen6;
@@ -53,7 +53,7 @@ bool Pelicula::operator==(string gen){
     }
 }
 
-void Pelicula::calif_cambio(float num){
+void Pelicula::calif_cambio(float num) {
     setCalifVideo(num);
 }
 

@@ -27,7 +27,7 @@ void Streaming::start() {
 void Streaming::menu() {
     opcion = "1";
 
-    while (opcion != "6") {
+    while (opcion != "7") {
         try {
             cout << "\n        * BIENVENIDOS A TEC-FLIX *        " << endl;
 		    cout << "\n1. Cargar archivo de datos (Excel o csv)" << endl;
@@ -35,16 +35,18 @@ void Streaming::menu() {
 		    cout << "3. Mostrar los episodios de una determinada serie." << endl;
 		    cout << "4. Mostrar las películas con una calificacion mayor a cierto número" << endl;
 		    cout << "5. Calificar un video" << endl;
-            cout << "6. Salir" << endl;
+            cout << "6. Mostrar la actualización de peliculas y series" << endl;
+            cout << "7. Salir" << endl;
             cout << "\nElige una opcion: " ;
             cin >> opcion;
          
 
-            if (opcion != "1" && opcion != "2" && opcion != "3" && opcion != "4" && opcion != "5" && opcion != "6") {
+            if (opcion != "1" && opcion != "2" && opcion != "3" && opcion != "4" && opcion != "5" && opcion != "6" && opcion != "7" ) {
                 ExcepcionStreaming exc("El valor ingresado no es valido");
                 throw(exc);
             }
 
+            /* 
             if (opcion == "1") {
                 catalogo.imprimir();
             } else if (opcion == "2") {
@@ -56,11 +58,32 @@ void Streaming::menu() {
             } else if (opcion == "5") {
                 opcion5();
             } else if (opcion == "6") {
+                opcion6();
+            } else if (opcion == "7") {
                 cout << "¡Vuelve pronto!" << endl;
                 break;
             }
+            */
 
-        } catch (ExcepcionStreaming const &exc) {
+            switch(opcion) {
+                case "1":
+                    catalogo.imprimir();
+                case "2":
+                    opcion2();
+                case "3":
+                    opcion3();
+                case "4":
+                    opcion4();
+                case "5":
+                    opcion5();
+                case "6":
+                    opcion6();
+                default:
+                    cout << "¡Vuelve pronto!" << endl;
+                    break;
+            }
+
+        } catch(ExcepcionStreaming const &exc) {
             exc.mensaje();
         }
     }
@@ -71,10 +94,11 @@ void Streaming::opcion2() {
         string opcion2;
         string gen, califi1;
         float califi;
+        
         cout << "1. Una calificacion mayor" << endl;
-			cout << "2. Un cierto genero" << endl;
-            cout << "introduce la opcion que deseas saber: ";
-            cin >> opcion2;
+		cout << "2. Un cierto genero" << endl;
+        cout << "introduce la opcion que deseas saber: ";
+        cin >> opcion2;
         
         if (opcion2 != "1" && opcion2 != "2") {
             ExcepcionStreaming exc("El valor ingresado no es valido");
@@ -88,7 +112,7 @@ void Streaming::opcion2() {
             catalogo.califVideos(califi);
         }
         
-        else if (opcion2 == "2"){
+        else if (opcion2 == "2") {
                 
                 cout << "Genero disponibles -> las opciones son:" << endl;
                 cout << "\nAccion \nAventura \nDrama \nFantasia \nRomance \nSci-Fi \nAnimacion \nFamiliar \nMusical \nGuerra \nCrimen \nMisterio \nTerror \nComedia \nWestern \nBiografia \nHorror \n¿Qué deseas buscar? introduce aqui: " ;
@@ -106,11 +130,11 @@ void Streaming::opcion2() {
         
     }
         catch (ExcepcionStreaming const &exc) {
-        exc.mensaje();
+            exc.mensaje();
         }
         
-        catch (std::invalid_argument const &error){
-        cout << "Error, debe ser un nÃºmero" << endl;
+        catch (std::invalid_argument const &error) {
+            cout << "Error, debe ser un numero" << endl;
         }
     }
     
@@ -126,12 +150,12 @@ void Streaming::opcion2() {
     void Streaming::opcion4() {
         
         float c;
-        cout << "Â¿Desde quÃ© calificaciÃ³n quieres que te muestre las pelÃ­culas (mÃ¡ximo es 10)?" << endl;
+        cout << "¿Desde que calificacion quieres que te muestre las peliculas (maximo es 10)?" << endl;
         cin >> c;
         catalogo.clasificarP_cali(c);
     }
     
-    void Streaming::opcion5(){
+    void Streaming::opcion5() {
         try {
             string video;
             cout << "Ingresa el nombre del capitulo o pelicula que te gustaria calificar: " << endl;
@@ -147,8 +171,13 @@ void Streaming::opcion2() {
             }
 
             catalogo.calificarVideo(video, cali);
-        } catch (ExcepcionStreaming const &exc)
-{
+        } catch (ExcepcionStreaming const &exc) {
             exc.mensaje();
         }
+   
     }
+
+    void Streaming::opcion6() {
+        
+    }
+}

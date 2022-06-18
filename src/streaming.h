@@ -31,6 +31,7 @@ class Streaming {
         void opcion3();
         void opcion4();
         void opcion5();
+        void opcion6();
 };
 
 #endif

@@ -35,7 +35,7 @@ void Catalogo::imprimir() {
     }
 
     cout << "\nLista de Peliculas: " << endl;
-    for (int j = 0; j < peliculas.size(); j++){
+    for (int j = 0; j < peliculas.size(); j++) { 
         peliculas[j].imprimir();
         cout << endl;
     }
@@ -94,7 +94,7 @@ void Catalogo::leerCatalogo() {
                     }
                 }
                 
-                if(bandera == false){
+                if(bandera == false) {
                     
                     Serie serie(id, nombre, genero);
                     Episodio episodio(idEpi, nombreEpisodio, durac, fechaEstreno, cali,  numEp, temp);
@@ -113,14 +113,14 @@ void Catalogo::califVideos(float calif){
     if (calif < 1 || calif > 10){
         cout << "No es vÃ¡lida esa calificaciÃ³n. Necesita ser del 1-10" << endl;
     
-    }else{
-        
+    } else {
+         
         int contadorS = 0, contadorP = 0;
 
         cout << "\nLista de PelÃ­culas con mayor calificaciÃ³n: " << endl;
         
-        for (int i = 0; i < peliculas.size(); i++){
-            if (peliculas[i] >= calif){
+        for (int i = 0; i < peliculas.size(); i++) {
+            if(peliculas[i] >= calif){
                 
                 peliculas[i].imprimir();
                 cout << endl;
@@ -134,14 +134,14 @@ void Catalogo::califVideos(float calif){
         
         cout << "\nLista de Series y Episodios con mayor calificaciÃ³n: " << endl;
 
-        for (int j = 0; j < series.size(); j++){
-            if (series[j] >= calif){
+        for (int j = 0; j < series.size(); j++) {
+            if(series[j] >= calif) {
                 
                 series[j].imprimir(calif);
                 contadorS += 1;
             }
         }
-        if (contadorS == 0)
+        if(contadorS == 0)
         {
             cout << "Lo sentimos, no tenemos episodios con esa calificaciÃ³n" << endl;
         }

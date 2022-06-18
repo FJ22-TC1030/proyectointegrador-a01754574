@@ -8,6 +8,6 @@ using namespace std;
 
 ExcepcionStreaming::ExcepcionStreaming() {}
 
-ExcepcionStreaming::ExcepcionStreaming(string txt) {texto = txt;}
+ExcepcionStreaming::ExcepcionStreaming(string texto) {txt = texto;}
 
-void ExcepcionStreaming::mensaje() const {cout << "¡Error! " << texto << endl;}
+void ExcepcionStreaming::mensaje() const {cout << "Valor igualito " << txt << endl;}

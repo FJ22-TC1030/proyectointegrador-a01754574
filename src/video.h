@@ -13,7 +13,6 @@ using namespace std;
 class Video {
 
     private:
-        // Atributos
         string Nombre;
         string ID;
         string fechaEstreno;

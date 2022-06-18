@@ -22,7 +22,7 @@ class Serie {
 
     public:
         Serie();
-        Serie(string id_Serie, string nombre_Serie, string genero_Serie);
+        Serie(string idS, string nombreS, string generoS);
         string getIdSerie();
         string getNombreSerie();
         string getGeneroSerie();
