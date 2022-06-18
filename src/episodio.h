@@ -20,18 +20,15 @@ class Episodio: public Video {
         
     public:
         Episodio();
-        Episodio(string id_Episodio, string Nombre_episodio, int num_Episodio, int temporada_new, 
-        string fecha_estreno, int calificacion_Ep, float duracionEp);
+        Episodio(string ID_, string Nom, int duracion_, string fechaEstreno_, float calif_, int num_ep, int temp) : Video(ID_,Nom,duracion_,fechaEstreno_, calif_){}
 
-        string getIdEpisodio();
-        string getNombre_episodio();
+        
         int getNumEpisodio();
         int getTemporada();
-        string getFecha_estreno();
-        int getCalificacionEp();
-
-        void setCalifEpisodio(float newCalifEp);
+        void calific_cambio(float cali);
+        void imprimir();
+        bool operator>=(float cal);
+        
 };
-
 
 #endif

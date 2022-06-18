@@ -8,28 +8,33 @@
 using namespace std;
 
 
-Episodio::Episodio() : Video(),
-    numEpisodio(0), temporada(0)  {
+Episodio::Episodio() : Video(), numEpisodio(0), temporada(0)  {}
+
+// string Nombre_video, string ID_video, string fecha_Estreno, float calif_video, int duracion_video)
+Episodio::Episodio(string ID_, string Nom, int duracion_, string fechaEstreno_, float calif_, int num_ep, int temp) : Video(ID_,Nom,duracion_,fechaEstreno_, calif_){
+    
+    numEpisodio = num_ep;
+    temporada = temp;
 }
-
-
-    // string Nombre_video, string ID_video, string fecha_Estreno, float calif_video, int duracion_video)
-Episodio::Episodio(string id_Episodio, string Nombre_episodio, int num_Episodio, int temporada_new, 
-    string fecha_estreno, int calificacion_Ep,  float duracionEp) :
-    Video(Nombre_episodio, id_Episodio, fecha_estreno, calificacion_Ep, duracionEp),
-        numEpisodio(num_Episodio), temporada(temporada_new) 
-     {}
-
-string Episodio::getIdEpisodio() {return getIDVideo();}
-
-string Episodio::getNombre_episodio() {return getNombreVideo();}
 
 int Episodio::getNumEpisodio() {return numEpisodio;}
 
 int Episodio::getTemporada() {return temporada;}
 
-string Episodio::getFecha_estreno() {return getFechaEstreno();}
+void Episodio::imprimir(){
+    
+    Video::imprimir();
+    cout << "*EPISODIO*" << endl;
+    cout << "Numero Episodio: " << numEpisodio << endl;
+    cout << "Temporada: " << temporada << endl;
+    cout << "\n" << endl;
+}
 
-int Episodio::getCalificacionEp() {return getCalifVideo();}
+bool Episodio::operator>=(float cal) {
+    if (getCalifVideo() >= cal) {return true;}
+    else {return false;}
+}
 
-void Episodio::setCalifEpisodio(float newCalifEp) {setCalifVideo(newCalifEp);}
+void Episodio::calific_cambio(float cali){
+    setCalifVideo(cali); 
+}

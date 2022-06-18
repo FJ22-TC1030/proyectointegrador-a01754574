@@ -5,11 +5,10 @@
 #define SERIE_H
 
 #pragma once
-#include "episodio.h"
 #include <iostream>
 #include <string>
 #include <vector>
-
+#include "episodio.h"
 
 using namespace std;
 
@@ -17,25 +16,24 @@ class Serie {
 
     private:
         vector<Episodio> episodios;
-        string IDSerie, nombreSerie, generoSerie;
-    
+        string nombre_Serie;
+        string id_Serie;
+        string genero_Serie;
+
     public:
         Serie();
-        Serie(string _IDSerie, string _nombreSerie, string _generoSerie);
-
+        Serie(string id_Serie, string nombre_Serie, string genero_Serie);
         string getIdSerie();
         string getNombreSerie();
         string getGeneroSerie();
-        
-        void agregarEpisodio(Episodio _episodio);
-        void buscarEpisodio(string nombre, float c);
-
+        void agregarEpisodio(Episodio episode);
         void imprimir();
 
+        bool operator >= (float cal); 
+        void imprimir(float cal);
+
+        void buscarEpisodio(string nombre, float c);
+
         bool operator == (string gen);
-
-
-
 };
-
 #endif

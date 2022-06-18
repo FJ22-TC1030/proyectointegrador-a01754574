@@ -20,15 +20,15 @@ class Pelicula: public Video {
     
     public:
         Pelicula();
-        Pelicula(string _ID, string _nombre, int _duracion, string _genero, float _calif, string _fechaEstreno);
+        Pelicula(string ID_, string Nom, int duracion_, string genero_, string fechaEstreno_, float calif_);
         
-        string getGeneroPelicula();
-        void cambiarCalif(float califP);
-        
-        void imprimir();
-
-        bool operator >= (float cal);
-        bool operator == (string gen);
+       string getGeneroPelicula();
+       void calif_cambio(float calif_P);
+       void imprimir();
+       
+       bool operator >= (float cal); 
+       bool operator == (string gen);
+      
 };
 
 #endif

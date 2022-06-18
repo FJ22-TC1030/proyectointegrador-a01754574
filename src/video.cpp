@@ -6,35 +6,36 @@
 #include <string>
 
 Video::Video() {
+
+    Nombre = "S/T";
     ID = "000";
-    nombre = "S/T";
     fechaEstreno = "00/00/00";
     calif = 0.0;
     duracion = 0;
 }
 
-Video::Video(string _ID, string _nombre, string _fechaEstreno, float _calif, int _duracion) {
-    ID = _ID;
-    nombre = _nombre;
-    fechaEstreno = _fechaEstreno;
-    calif = _calif;
-    duracion = _duracion;
+Video::Video(string ID_, string Nom, int duracion_, string fechaEstreno_, int calif_){
+    Nombre = Nom;
+    ID = ID_;
+    fechaEstreno = fechaEstreno_;
+    calif = calif_;
+    duracion = duracion_;
 }
 
 
-string Video::getIDVideo() {return ID;}       
-string Video::getNombreVideo() {return nombre;}
+       
+string Video::getNombreVideo() {return Nombre;}
+string Video::getIDVideo() {return ID;}
 string Video::getFechaEstreno() {return fechaEstreno;}
 float Video::getCalifVideo() {return calif;}
 int Video::getDuracionVideo() {return duracion;}
 
 void Video::setCalifVideo(float NewCalif) {calif = NewCalif;}
-        
 
 void Video::imprimir() {
-    cout << "ID : " << ID << endl;
-    cout << "Nombre : " << nombre << endl;
-    cout << "Fecha Estreno : " << fechaEstreno << endl;
-    cout << "Calificacion : " << calif << endl;
-    cout << "Duracion : " << duracion << endl;
+    cout << "Nombre : " << Nombre << endl;
+    cout << "ID: " << ID << endl;
+    cout << "Fecha Estreno: " << fechaEstreno << endl;
+    cout << "Calificacion: " << calif << endl;
+    cout << "Duracion: " << duracion << endl;
 }

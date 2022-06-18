@@ -11,25 +11,26 @@
 using namespace std;
 
 class Video {
-    
+
     private:
-        string ID, nombre, fechaEstreno;
+        // Atributos
+        string Nombre;
+        string ID;
+        string fechaEstreno;
         float calif;
         int duracion;
 
+
     public:
         Video();
-        Video(string _ID, string _nombre, string _fechaEstreno, float _calif, int _duracion);
+        Video(string ID_, string Nom, int duracion_, string fechaEstreno_, int calif_);
 
-        string getIDVideo();
         string getNombreVideo();
+        string getIDVideo();
         string getFechaEstreno();
         int getDuracionVideo();
         float getCalifVideo();
         void setCalifVideo(float NewCalif);
-
         void imprimir();
-        
 };
-
 #endif

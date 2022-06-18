@@ -4,35 +4,40 @@
 #ifndef CATALOGO_H
 #define CATALOGO_H
 
-#pragma once
-#include "pelicula.h"
-#include "serie.h"
+#pragma once 
 #include <iostream>
+#include <string>
 #include <vector>
-
+#include "serie.h"
+#include "Pelicula.h"
+#include <string>
+#include <strstream>
 
 using namespace std;
 
+
 class Catalogo {
-
+   
     private:
-        vector<Pelicula> pelicula;
-        vector<Serie> serie;
-    
+        vector<Serie> series;
+        vector<Pelicula> peliculas;
+
     public:
-        Catalogo();
-        Catalogo(vector<Pelicula> pels, vector<Serie> sre);
+        void agregarSerie(Serie ser);
+        void agregarPelicula(Pelicula peli);
+        void setCalificacion(int calif, string vari);
+        void imprimir();
+        void leerCatalogo();
 
-        void cargarArchivo();
-        void mostrarCatalogo();
-        void mostrarPeliculas();
-        void mostrarSeries();
-        void agregarSeries();
-        
-        void agregarPeliculas(Pelicula Pelicula1);
-        void agregarSeries(Serie Serie1); 
+        void califVideos(float calif); // opciÃ³n 2.1
 
+        void clasificar_generos(string gen);
 
+        void buscaSerie(string serie);
+
+        void clasificarP_cali(float c);
+
+        void calificarVideo(string video, float cali);
 };
 
 #endif
