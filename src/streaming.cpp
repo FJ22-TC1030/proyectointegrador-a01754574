@@ -16,9 +16,6 @@
 #include <vector>
 
 using namespace std;
-using std::cin;
-using std::cout;
-using std::getline;
 
 
 Streaming::Streaming() {}
