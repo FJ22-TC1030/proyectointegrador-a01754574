@@ -25,8 +25,6 @@ class Streaming {
         Streaming();
         void start();
         void menu();
-        void empezar();
-        int setOpcion(int opc);
 
 };
 

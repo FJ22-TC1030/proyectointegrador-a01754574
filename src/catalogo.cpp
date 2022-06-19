@@ -12,13 +12,8 @@
 #include "catalogo.h"
 
 using namespace std;
-using std::cout;
-using std::endl;
-using std::ifstream;
 using std::stof;
 using std::stoi;
-using std::string;
-using std::stringstream;
 
 void Catalogo::Series(Serie ser) {
     series.push_back(ser);
