@@ -13,7 +13,7 @@ int main() {
     Catalogo Catalogo;
     Streaming tecplus;
 
-    Catalogo.leerCatalogo();
+    Catalogo.cargarCatalogo();
     tecplus.start();
 
     return 0;

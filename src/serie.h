@@ -22,18 +22,19 @@ class Serie {
 
     public:
         Serie();
-        Serie(string idS, string nombreS, string generoS);
+        Serie(string idSer, string nombreSer, string generoSer);
+        vector<Episodio> GetCapitulos();
         string getIdSerie();
         string getNombreSerie();
         string getGeneroSerie();
         void agregarEpisodio(Episodio episode);
         void imprimir();
 
-        bool operator >= (float cal); 
-        void imprimir(float cal);
+        bool operator >= (float dato2); 
+        void imprimir(float dato);
 
-        void buscarEpisodio(string nombre, float c);
+        void Episodios(string nombre, float cambio);
 
-        bool operator == (string gen);
+        bool operator == (string genero);
 };
 #endif

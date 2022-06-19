@@ -18,20 +18,16 @@ using namespace std;
 class Streaming {
     
     private:
-        string opcion;
-        Catalogo catalogo;
+        string op;
+        Catalogo imprime;
 
     public:
         Streaming();
         void start();
         void menu();
-        int setOpcion(int op);
+        void empezar();
+        int setOpcion(int opc);
 
-        void opcion2();
-        void opcion3();
-        void opcion4();
-        void opcion5();
-        void opcion6();
 };
 
 #endif

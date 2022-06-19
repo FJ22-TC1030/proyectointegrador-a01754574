@@ -1,3 +1,7 @@
+// Luis Fernando De León Silva A01754574 
+// Oswaldo Daniel Hernandez De Luna A01753911
+
+
 #include "ExcepcionStream.h"
 #include <string>
 #include <iostream>
@@ -6,8 +10,8 @@
 using namespace std;
 
 
-ExcepcionStreaming::ExcepcionStreaming() {}
+ExcepcionStream::ExcepcionStream() {}
 
-ExcepcionStreaming::ExcepcionStreaming(string texto) {txt = texto;}
+ExcepcionStream::ExcepcionStream(string imprime2) {imprime = imprime2;}
 
-void ExcepcionStreaming::mensaje() const {cout << "Hay un error: " << txt << endl;}
+void ExcepcionStream::mensaje() const {cout << "Ingresa de nuevo la opcion " << imprime << endl;}

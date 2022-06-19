@@ -21,7 +21,7 @@ int Episodio::getNumEpisodio() {return numEpisodio;}
 
 int Episodio::getTemporada() {return temporada;}
 
-void Episodio::imprimir(){
+void Episodio::imprimir() {
     
     Video::imprimir();
     cout << "*EPISODIO*" << endl;

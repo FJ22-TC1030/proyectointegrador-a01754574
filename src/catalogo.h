@@ -23,19 +23,19 @@ class Catalogo {
         vector<Pelicula> peliculas;
 
     public:
-        void agregarSerie(Serie ser);
-        void agregarPelicula(Pelicula peli);
-        void setCalificacion(int calif, string vari);
+        void Series(Serie ser);
+        void Peliculas(Pelicula peli);
+        void setCalif(int calif, string vari);
         void imprimir();
-        void leerCatalogo();
+        void cargarCatalogo();
 
-        void califVideos(float calif); // opciÃ³n 2.1
+        void calificar(float calificacion);
 
-        void clasificar_generos(string gen);
+        void generos(string gen);
 
-        void buscaSerie(string serie);
+        void encuentraSerie(string serie);
 
-        void clasificarP_cali(float c);
+        void clas_cali(float clas);
 
         void calificarVideo(string video, float cali);
 };

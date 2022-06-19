@@ -1,4 +1,4 @@
-// Luis Fernando De León Silva A01754574 
+/// Luis Fernando De León Silva A01754574 
 // Oswaldo Daniel Hernandez De Luna A01753911
 
 #include <string>
@@ -16,12 +16,15 @@ Serie::Serie() {
     genero_Serie = "S/G";
 }
 
-Serie::Serie(string idS, string nombreS, string generoS) {
-    id_Serie = idS;
-    nombre_Serie = nombreS;
-    genero_Serie = generoS;
+Serie::Serie(string idSer, string nombreSer, string generoSer) {
+    id_Serie = idSer;
+    nombre_Serie = nombreSer;
+    genero_Serie = generoSer;
 }
 
+vector<Episodio> Serie::GetCapitulos(){
+    return episodios;
+}
 string Serie::getIdSerie() {return id_Serie;}
 string Serie::getNombreSerie() {return nombre_Serie;}
 string Serie::getGeneroSerie() {return genero_Serie;}
@@ -35,45 +38,45 @@ void Serie::imprimir(){
     cout << "Nombre: " << nombre_Serie << endl;
     cout << "Genero: " << genero_Serie << endl;
 
-    cout << "Lista de episodios: " << endl;
+    cout << "Episodios: " << endl;
     for (int i = 0; i < episodios.size(); i++){
         episodios[i].imprimir();
     }
 }
 
-void Serie::imprimir(float cal) {
+void Serie::imprimir(float dato) {
     cout << "\nID: " << id_Serie << endl;
     cout << "Nombre: " << nombre_Serie << endl;
     cout << "Genero: " << genero_Serie << endl;
 
-    cout << "Lista de episodios: " << endl;
+    cout << "Episodios: " << endl;
     for (int i = 0; i < episodios.size(); i++){
-        if (episodios[i] >= cal){
+        if (episodios[i] >= dato){
             episodios[i].imprimir();
         }
     }
 }
 
-void Serie::buscarEpisodio(string nombre, float c) {
+void Serie::Episodios(string nombre, float cambio) {
     for (int i = 0; i < episodios.size(); i++)
     {
         if (episodios[i].getNombreVideo() == nombre)
         {
-            episodios[i].calific_cambio(c);
+            episodios[i].calific_cambio(cambio);
             episodios[i].imprimir();
         }
     }
 }
 
-bool Serie::operator>=(float cal){
-    int bandera = 0;
+bool Serie::operator>=(float dato2){
+    int b = 0;
     for (int i = 0; i < episodios.size(); i++){
-        if (episodios[i] >= cal){
-            bandera += 1;
+        if (episodios[i] >= dato2){
+            b += 1;
         }
     }
     
-    if (bandera >= 1){
+    if (b >= 1){
         return true;
     
     }else{
@@ -84,6 +87,7 @@ bool Serie::operator>=(float cal){
 bool Serie::operator == (string genero){
     stringstream token(genero_Serie);
     string genero1, genero2, genero3, genero4, genero5, genero6;
+    
     getline(token, genero1, '/'); 
     getline(token, genero2, '/');
     getline(token, genero3, '/');

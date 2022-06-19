@@ -14,7 +14,7 @@ Video::Video() {
     duracion = 0;
 }
 
-Video::Video(string ID_, string Nom, int duracion_, string fechaEstreno_, int calif_){
+Video::Video(string ID_, string Nom, int duracion_, string fechaEstreno_, int calif_) {
     ID = ID_;
     Nombre = Nom;
     fechaEstreno = fechaEstreno_;

@@ -1,5 +1,9 @@
-#ifndef EXCEPCIONSTREAMING_H
-#define EXCEPCIONSTREAMING_H
+// Luis Fernando De León Silva A01754574 
+// Oswaldo Daniel Hernandez De Luna A01753911
+
+
+#ifndef EXCEPCIONSTREAM_H
+#define EXCEPCIONSTREAM_H
 
 #pragma once
 #include "streaming.h"
@@ -8,14 +12,14 @@
 
 using namespace std;
 
-class ExcepcionStreaming: public Streaming {
+class ExcepcionStream: public Streaming {
 
     private:
-        string txt;
+        string imprime;
 
     public:
-        ExcepcionStreaming();
-        ExcepcionStreaming(string texto);
+        ExcepcionStream();
+        ExcepcionStream(string imprime2);
 
         void mensaje() const;
 };

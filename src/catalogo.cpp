@@ -6,10 +6,10 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include "Episodio.h"
-#include "Serie.h"
-#include "Pelicula.h"
-#include "Catalogo.h"
+#include "episodio.h"
+#include "serie.h"
+#include "pelicula.h"
+#include "catalogo.h"
 
 using namespace std;
 using std::cout;
@@ -17,89 +17,89 @@ using std::endl;
 using std::ifstream;
 using std::stof;
 using std::stoi;
-using std ::string;
+using std::string;
 using std::stringstream;
 
-void Catalogo::agregarSerie(Serie ser) {
+void Catalogo::Series(Serie ser) {
     series.push_back(ser);
 }
 
-void Catalogo::agregarPelicula(Pelicula pel) {
+void Catalogo::Peliculas(Pelicula pel) {
     peliculas.push_back(pel);
 }
 
 void Catalogo::imprimir() {
-    cout << "Lista de series: " << endl;
+    cout << "Series: " << endl;
     for (int i = 0; i < series.size(); i++) {
         series[i].imprimir();
     }
 
-    cout << "\nLista de Peliculas: " << endl;
+    cout << "\nPeliculas: " << endl;
     for (int j = 0; j < peliculas.size(); j++) { 
         peliculas[j].imprimir();
         cout << endl;
     }
 }
 
-void Catalogo::leerCatalogo() {
+void Catalogo::cargarCatalogo() {
     
     ifstream archivo;
-    string line;
+    string linea;
     archivo.open("BasePeliculas.csv");
     
-    getline(archivo, line);
-    while (getline(archivo, line)){
+    getline(archivo, linea);
+    while (getline(archivo, linea)){
 
-        stringstream token(line);
-        string id, nombre, duracion, genero, calificacion, fechaEstreno, nombreEpisodio, temporada, numEpisodio, idEpi;
+        stringstream token(linea);
+        string ID, Nombre, Duracion, Genero, Calificacion, Fecha_Estreno, Nombre_Episodio, Temporada, no_Episodio, iD_Episodio;
 
-        getline(token, id, ',');
-        getline(token, nombre, ',');
-        getline(token, duracion, ',');
-        getline(token, genero, ',');
-        getline(token, calificacion, ',');
-        getline(token, fechaEstreno, ',');
-        getline(token, nombreEpisodio, ',');
-        getline(token, temporada, ',');
-        getline(token, numEpisodio, ',');
-        getline(token, idEpi);
+        getline(token, ID, ','); //columna 1
+        getline(token, Nombre, ','); // columna 2
+        getline(token, Duracion, ','); // columna 3
+        getline(token, Genero, ','); // columna 4
+        getline(token, Calificacion, ','); // columna 5
+        getline(token, Fecha_Estreno, ','); // columna 6
+        getline(token, Nombre_Episodio, ','); // columna 7
+        getline(token, Temporada, ','); // columna 8
+        getline(token, no_Episodio, ','); // columna 9
+        getline(token, iD_Episodio); // columna 10
         
-        int durac = stoi(duracion);
-        float cali = stof(calificacion);
+        int columna3 = stoi(Duracion);
+        float columna5 = stof(Calificacion);
 
-        if (temporada == "") {
-            Pelicula pelicula(id, nombre, durac, fechaEstreno, genero, cali);
-            agregarPelicula(pelicula);
+        if (Temporada == "") {
+            Pelicula pelicula(ID, Nombre, columna3, Fecha_Estreno, Genero, columna5);
+            Peliculas(pelicula);
         
         } else {
 
-            bool bandera = false;
-            int temp = stoi(temporada);
-            int numEp = stoi(numEpisodio);
+            bool b = false;
+            int columna8 = stoi(Temporada);
+            int columna9 = stoi(no_Episodio);
             if (series.size() == 0) {
 
-                Serie serie1(id, nombre, genero);
-                Episodio episodio(idEpi, nombreEpisodio, durac, fechaEstreno, cali,  numEp, temp);
+                Serie serie1(ID, Nombre, Genero);
+                Episodio episodio(iD_Episodio, Nombre_Episodio, columna3, Fecha_Estreno, columna5,  columna9, columna8);
                 serie1.agregarEpisodio(episodio);
-                agregarSerie(serie1);
+                Series(serie1);
             
             } else {
                 
                 for(int i = 0; i < series.size(); i++){
                     
-                    if(series[i].getNombreSerie() == nombre){
-                        Episodio episodio(idEpi, nombreEpisodio, durac, fechaEstreno, cali,  numEp, temp);
+                    if(series[i].getNombreSerie() == Nombre){
+                        Episodio episodio(iD_Episodio, Nombre_Episodio, columna3, Fecha_Estreno, columna5,  columna9, columna8);
                         series[i].agregarEpisodio(episodio);
-                        bandera = true;
+                        b = true;
                     }
                 }
                 
-                if(bandera == false) {
+                if(b == false) {
                     
-                    Serie serie(id, nombre, genero);
-                    Episodio episodio(idEpi, nombreEpisodio, durac, fechaEstreno, cali,  numEp, temp);
+                    Serie serie(ID, Nombre, Genero);
+                    Episodio episodio(iD_Episodio, Nombre_Episodio, columna3, Fecha_Estreno, columna5,  columna9, columna8);
                     serie.agregarEpisodio(episodio);
-                    agregarSerie(serie);
+                    Series(serie);
                 }
             }
         }
@@ -108,135 +108,134 @@ void Catalogo::leerCatalogo() {
     archivo.close();
 }
 
-void Catalogo::califVideos(float calif){
+void Catalogo::calificar(float calificacion){
     
-    if (calif < 1 || calif > 10){
-        cout << "No es vÃ¡lida esa calificaciÃ³n. Necesita ser del 1-10" << endl;
+    if (calificacion < 1 || calificacion > 10){
+        cout << "Error. Introduce una calificacion en el rango del 1 al 10" << endl;
     
     } else {
          
-        int contadorS = 0, contadorP = 0;
+        int Ser = 0, Pel = 0;
 
-        cout << "\nLista de PelÃ­culas con mayor calificaciÃ³n: " << endl;
+        cout << "\nLas listas de Peliculas con mayor calificacion: " << endl;
         
         for (int i = 0; i < peliculas.size(); i++) {
-            if(peliculas[i] >= calif){
+            if(peliculas[i] >= calificacion){
                 
                 peliculas[i].imprimir();
                 cout << endl;
-                contadorP += 1;
+                Pel += 1;
             }
         }
         
-        if (contadorP == 0){
-            cout << "Lo sentimos, no tenemos pelÃ­culas con esa calificaciÃ³n" << endl;
+        if (Pel == 0){
+            cout << "No tenemos esa calificacion" << endl;
         }
         
-        cout << "\nLista de Series y Episodios con mayor calificaciÃ³n: " << endl;
+        cout << "\nSeries y Episodios con calificacion mayor: " << endl;
 
         for (int j = 0; j < series.size(); j++) {
-            if(series[j] >= calif) {
+            if(series[j] >= calificacion) {
                 
-                series[j].imprimir(calif);
-                contadorS += 1;
+                series[j].imprimir(calificacion);
+                Ser += 1;
             }
         }
-        if(contadorS == 0)
+        if(Ser == 0)
         {
-            cout << "Lo sentimos, no tenemos episodios con esa calificaciÃ³n" << endl;
+            cout << "No tenemos esa calificacion" << endl;
         }
     }
 }
 
-void Catalogo::clasificar_generos(string gen) // opcion 2.2
+void Catalogo::generos(string genero)
 {
-    int contador = 0;
-    cout << "\nLista de PelÃ­culas con ese gÃ©nero: " << endl;
+   int c = 0;
+    cout << "\nPeliculas con el genero solicitado: " << endl;
     for (int i = 0; i < peliculas.size(); i++){
-        if (peliculas[i] == gen){
+        if (peliculas[i] == genero){
 
             peliculas[i].imprimir();
             cout << endl;
-            contador += 1;
+            c += 1;
         }
     }
     
-    if (contador == 0){
-        cout << "Lo sentimos, no tenemos peliculas con ese gÃ©nero" << endl;
+    if (c == 0){
+        cout << "No tenemos ese genero" << endl;
     }
-    contador = 0;
-    cout << "\nLista de series con ese gÃ©nero: " << endl;
+    c = 0;
+    cout << "\nSeries con el genero solicitado: " << endl;
     for (int i = 0; i < series.size(); i++)
     {
-        if (series[i] == gen)
+        if (series[i] == genero)
         {
             series[i].imprimir();
             cout << endl;
-            contador += 1;
+            c += 1;
         }
     }
-    if (contador == 0)
+    if (c == 0)
     {
-        cout << "Lo sentimos, no tenemos series con ese gÃ©nero" << endl;
+        cout << "No tenemos ese genero" << endl;
     }
 }
-
-void Catalogo::buscaSerie(string serie) // opciÃ³n 3
+void Catalogo::encuentraSerie(string serie)
 {
-    int contador = 0;
+    int c = 0;
     for (int i = 0; i < series.size(); i++)
     {
         if (series[i].getNombreSerie() == serie)
         {
             series[i].imprimir();
-            contador += 1;
+            c += 1;
         }
     }
-    if (contador == 0)
+    if (c == 0)
     {
-        cout << "Lo sentimos, no es vÃ¡lida esa serie" << endl;
+        cout << "No encontramos esa Serie" << endl;
     }
 }
 
-void Catalogo::clasificarP_cali(float c) // opciÃ³n 4
+void Catalogo::clas_cali(float clas)
 {
-    if (c > 10)
+    if (clas > 11)
     {
-        cout << "No es vÃ¡lida esa calificaciÃ³n. Debe ser menor a 10" << endl;
+        cout << "La calificacion no puede ser mayor a 10" << endl;
     }
     else
     {
-        cout << "PelÃ­culas con esa calificaciÃ³n o mayores" << endl;
-        int contador = 0;
+        cout << "Peliculas con igual o mayor calificacion" << endl;
+        int c = 0;
         for (int i = 0; i < peliculas.size(); i++)
         {
-            if (peliculas[i] >= c)
+            if (peliculas[i] >= clas)
             {
                 peliculas[i].imprimir();
                 cout << endl;
-                contador += 1;
+                c += 1;
             }
         }
-        if (contador == 0)
+        if (c == 0)
         {
-            cout << "Lo sentimos, no tenemos pelÃ­culas con esa calificaciÃ³n o superior" << endl;
+            cout << "No tenemos esa calificacion" << endl;
         }
     }
 }
-void Catalogo::calificarVideo(string video, float cali) // opciÃ³n 5
-{
+void Catalogo::calificarVideo(string video, float cali) {
     for (int i = 0; i < peliculas.size(); i++)
     {
         if (peliculas[i].getNombreVideo() == video)
         {
             peliculas[i].calif_cambio(cali);
+            peliculas[i].setCalifVideo(cali);
             peliculas[i].imprimir();
+            
         }
     }
-    // entrar a listas episodios
 
     for (int i = 0; i < series.size(); i++)
     {
-        series[i].buscarEpisodio(video, cali);
+        series[i].Episodios(video, cali);
     }
 }
